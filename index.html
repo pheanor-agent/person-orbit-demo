@@ -8,15 +8,23 @@
 .sample-links{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:11px}.sample-links a{color:var(--accent);text-decoration:none}.sample-links a:hover{text-decoration:underline}.sample-links button{background:none;border:1px solid var(--line);color:var(--muted);padding:7px 9px;cursor:pointer}.motion-section[hidden]{display:none}.motion-buttons{display:grid;grid-template-columns:1.5fr 1fr;gap:6px}.motion-buttons .button{padding:0 8px;justify-content:center;font-size:10px}#motionTimeline{width:100%;accent-color:var(--accent);cursor:pointer}.motion-time{display:flex;align-items:center;justify-content:space-between;font:10px ui-monospace,monospace;color:var(--muted)}.motion-time select{background:#202525;color:var(--ink);border:1px solid var(--line);padding:4px}.view-btn[aria-pressed=true]{color:var(--accent);border-color:var(--accent)}@media(max-width:620px){html,body{height:auto;min-height:100%}.viewport-wrap{flex:none;height:52vh;min-height:300px}.motion-section{grid-column:1/-1}.footer{min-height:32px;font-size:8px}.sample-links{flex-wrap:wrap}}
 .anime-scene .scene-label{color:#596970}.anime-scene .scene-label strong{color:#637044}.anime-scene .crosshair{display:none}
 
+
+.method-note{font-size:12px;line-height:1.7;color:var(--muted);margin:10px 0}.reference-details summary{cursor:pointer;font-size:12px;color:var(--accent)}.reference-details img{display:block;width:100%;height:auto;margin-top:12px;border:1px solid var(--line);background:#202527}.comparison-links{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0}.comparison-links a{font-size:11px;color:var(--ink);text-decoration:none;border:1px solid var(--line);padding:6px 8px}.comparison-links a:hover,.comparison-links a[aria-current="true"]{border-color:var(--accent);color:var(--accent)}[hidden]{display:none!important}
 </style>
 </head>
 <body>
 <header class="topbar"><div class="brand"><div class="mark" aria-hidden="true"></div><div><div class="brand-title">ORBIT / OBJECT VIEWER</div><div class="brand-sub">CHARACTER STUDY · MODEL COLLECTION</div></div></div><div class="top-meta"><span>INTERACTIVE / 3D</span><span class="live"><i></i> RENDER READY</span></div></header>
 <main class="layout"><section class="viewport-wrap" aria-label="움직이는 3D 모델 뷰"><canvas id="stage" class="stage" aria-label="드래그하여 모델 주변의 시점을 회전하는 3D 장면"></canvas><div class="scene-label"><strong>01</strong> &nbsp; / &nbsp; ORBITAL VIEW</div><div class="crosshair" aria-hidden="true"></div><div class="hint">드래그 · 회전 &nbsp;&nbsp; 휠 / 핀치 · 줌</div></section>
 <aside class="panel"><section class="object-card"><div class="eyebrow">선택된 오브젝트</div><div class="object-head"><div class="object-name" id="modelName">Cesium Man</div><div class="badge" id="modelBadge">GLB MODEL</div></div><div class="dimensions" id="modelDims">로딩 중…</div><div class="rule"></div><div class="status" id="status" role="status" aria-live="polite">초기화 중…</div></section>
-<section class="section"><div class="section-title"><span class="eyebrow">샘플 선택</span><span>COLLECTION</span></div><select class="preset-select" id="modelPreset" aria-label="샘플 모델"><option value="cesium" selected>Cesium Man · 걷기</option><option value="pikachu-sol">피카츄 · Sol</option><option value="pikachu-astra">피카츄 · Astra</option><option value="trellis">TRELLIS.2 · T형 기계</option><option value="person">TRELLIS.2 · 후드 여행자</option><option value="baseball">TRELLIS.2 · 야구 타격 순간</option></select><div class="sample-links"><a id="sampleLink" href="?model=cesium">이 샘플 바로 열기 ↗</a><button id="copyLink" type="button">링크 복사</button></div></section>
+<section class="section"><div class="section-title"><span class="eyebrow">샘플 선택</span><span>COLLECTION</span></div><select class="preset-select" id="modelPreset" aria-label="샘플 모델"><option value="cesium" selected>Cesium Man · 걷기</option><option value="pikachu-sol">피카츄 · Sol</option><option value="pikachu-astra">피카츄 · Astra</option><option value="trellis">TRELLIS.2 · T형 기계</option><option value="person">TRELLIS.2 · 후드 여행자</option><option value="baseball">TRELLIS.2 · 야구 타격 순간</option><option value="baseball-geometry">야구 · 형상 보정</option><option value="baseball-projection">야구 · 원본 이미지 투영</option><option value="baseball-hires">야구 · 고해상도 + 공 보정</option><option value="baseball-retexture">야구 · AI 재질 보정</option></select><div class="sample-links"><a id="sampleLink" href="?model=cesium">이 샘플 바로 열기 ↗</a><button id="copyLink" type="button">링크 복사</button></div></section>
 <section class="section motion-section" id="motionControls" hidden><div class="section-title"><span class="eyebrow">애니메이션</span><span id="motionPhase">반복 동작</span></div><div class="motion-buttons"><button class="button" id="motionPlay" aria-pressed="true">Ⅱ 동작 일시정지</button><button class="button" id="motionRestart" aria-label="동작 처음부터">↺ 처음부터</button></div><input id="motionTimeline" type="range" min="0" max="16" value="0" step="0.01" aria-label="애니메이션 재생 위치"><div class="motion-time"><span id="motionTime">0.0 / 16.0초</span><label>속도 <select id="motionSpeed" aria-label="애니메이션 속도"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option></select></label></div></section>
 
+
+<section class="section" id="baseballComparison" hidden>
+<div class="section-title"><span class="eyebrow">원본과 보정 비교</span><span>DETAIL STUDY</span></div>
+<p class="method-note" id="methodNote"></p>
+<details class="reference-details"><summary>기준 원본 이미지 보기</summary><a href="./assets/baseball-reference.png" target="_blank" rel="noopener"><img src="./assets/baseball-reference.png" alt="공이 배트 앞쪽에 닿는 최초 야구 타격 원본 이미지" loading="lazy"></a><p class="method-note">보정 결과는 최초 원본을 기준으로 만들었습니다. 기존 야구 모델은 공 위치 교정본에서 생성된 결과입니다.</p></details>
+<div class="comparison-links"><a href="?model=baseball">기존 모델</a><a href="?model=baseball-geometry">형상 보정</a><a href="?model=baseball-projection">원본 이미지 투영</a><a href="?model=baseball-hires">고해상도 + 공 보정</a><a href="?model=baseball-retexture">AI 재질 보정</a></div><a class="sample-link" id="modelDownload" download>현재 모델 GLB 다운로드 ↗</a></section>
 <section class="section"><div class="section-title"><span class="eyebrow">카메라</span><span>ORBIT / 360°</span></div><div class="controls"><button class="button primary" id="autoRotate" aria-pressed="false"><span class="playIcon">▶</span><span class="buttonLabel">자동 회전 시작</span></button><button class="button" id="reset"><span>↺</span><span>시점 초기화</span></button></div></section>
 <section class="section"><div class="section-title"><span class="eyebrow">빠른 시점</span><span>YAW</span></div><div class="views"><button class="view-btn" data-yaw="0">정면</button><button class="view-btn" data-yaw="1.5707963">측면</button><button class="view-btn" data-yaw="3.1415927">후면</button></div></section>
 <section class="section"><div class="eyebrow">오브젝트 정보</div><div class="spec"><div class="spec-row"><span>원본 크기</span><span id="modelDimsShort">자동 맞춤</span></div><div class="spec-row"><span>모션</span><span id="animationState">확인 중</span></div><div class="spec-row"><span>카메라 이동</span><span>360° 수평</span></div></div></section>
@@ -32328,6 +32336,10 @@ void main() {
   for (let i = 0; i < embedded.length; i++) initialBytes[i] = embedded.charCodeAt(i);
   const modelPreset = document.querySelector("#modelPreset");
   const generatedPresets = {
+    "baseball-geometry": { asset: "./assets/baseball-geometry.glb", label: "야구 · 형상 보정", note: "기존 자세를 유지하며 공의 실밥과 장갑의 봉제선을 3D로 추가했습니다." },
+    "baseball-projection": { asset: "./assets/baseball-projection.glb", label: "야구 · 원본 이미지 투영", note: "기존 형상에서 정합되는 부분에 원본 색과 무늬를 투영해 베이크했습니다. 보이지 않는 면은 기존 질감을 유지합니다." },
+    "baseball-hires": { asset: "./assets/baseball-hires.glb", label: "야구 · 고해상도 + 공 보정", note: "최초 원본으로 1536 해상도에서 다시 생성한 뒤, 공과 실밥·배트 접촉을 Blender로 다듬었습니다." },
+    "baseball-retexture": { asset: "./assets/baseball-retexture.glb", label: "야구 · AI 재질 보정", note: "기존 형상을 바탕으로 원본 이미지의 재질을 다시 생성한 결과입니다." },
     trellis: { asset: "./assets/trellis2-official-T.glb", label: "TRELLIS.2 · T형 기계 (로컬 생성)" },
     person: { asset: "./assets/trellis2-hooded-person.glb", label: "TRELLIS.2 · 인물 (후드 여행자)" },
     baseball: { asset: "./assets/baseball-impact.glb", label: "TRELLIS.2 · 야구 타격 순간" },
@@ -32340,6 +32352,18 @@ void main() {
     history.replaceState(null, "", url);
     document.querySelector("#sampleLink").href = url.href;
     document.querySelector("#copyLink").textContent = "링크 복사";
+    const comparison = document.querySelector("#baseballComparison");
+    comparison.hidden = !value.startsWith("baseball");
+    const preset = generatedPresets[value];
+    document.querySelector("#methodNote").textContent = preset?.note || "비교의 출발점인 기존 TRELLIS.2 야구 모델입니다.";
+    const download = document.querySelector("#modelDownload");
+    if (preset) {
+      download.href = preset.asset;
+      download.download = value + ".glb";
+    }
+    comparison.querySelectorAll(".comparison-links a").forEach(link => {
+      link.setAttribute("aria-current", String(new URL(link.href).searchParams.get("model") === value));
+    });
   }
   document.querySelector("#copyLink").addEventListener("click", async () => {
     try {
