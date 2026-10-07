@@ -13,9 +13,9 @@
 <aside class="panel"><section class="object-card"><div class="eyebrow">선택된 오브젝트</div><div class="object-head"><div class="object-name" id="modelName">Cesium Man</div><div class="badge" id="modelBadge">GLB MODEL</div></div><div class="dimensions" id="modelDims">로딩 중…</div><div class="rule"></div><div class="status" id="status" role="status" aria-live="polite">초기화 중…</div></section>
 <section class="section"><div class="section-title"><span class="eyebrow">카메라</span><span>ORBIT / 360°</span></div><div class="controls"><button class="button primary" id="autoRotate" aria-pressed="false"><span class="playIcon">▶</span><span class="buttonLabel">자동 회전 시작</span></button><button class="button" id="reset"><span>↺</span><span>시점 초기화</span></button></div></section>
 <section class="section"><div class="section-title"><span class="eyebrow">빠른 시점</span><span>YAW</span></div><div class="views"><button class="view-btn" data-yaw="0">정면</button><button class="view-btn" data-yaw="1.5707963">측면</button><button class="view-btn" data-yaw="3.1415927">후면</button></div></section>
-<section class="section"><div class="section-title"><span class="eyebrow">모델 교체</span><span>.GLB</span></div><select class="preset-select" id="modelPreset" aria-label="테스트 모델 프리셋"><option value="cesium" selected>Cesium Man · 기본</option><option value="trellis">TRELLIS.2 · T형 기계 (로컬 생성)</option><option value="custom">내 파일</option></select><input class="file-input" id="modelFile" type="file" accept=".glb,model/gltf-binary"><button class="button" id="chooseModel"><span>＋</span><span>내 GLB 파일 불러오기</span></button></section>
+<section class="section"><div class="section-title"><span class="eyebrow">모델 교체</span><span>.GLB</span></div><select class="preset-select" id="modelPreset" aria-label="테스트 모델 프리셋"><option value="cesium" selected>Cesium Man · 기본</option><option value="trellis">TRELLIS.2 · T형 기계 (로컬 생성)</option><option value="person">TRELLIS.2 · 인물 (후드 여행자)</option><option value="custom">내 파일</option></select><input class="file-input" id="modelFile" type="file" accept=".glb,model/gltf-binary"><button class="button" id="chooseModel"><span>＋</span><span>내 GLB 파일 불러오기</span></button></section>
 <section class="section"><div class="eyebrow">오브젝트 정보</div><div class="spec"><div class="spec-row"><span>원본 크기</span><span id="modelDimsShort">자동 맞춤</span></div><div class="spec-row"><span>모션</span><span id="animationState">확인 중</span></div><div class="spec-row"><span>카메라 이동</span><span>360° 수평</span></div></div></section>
-<div class="disclaimer"><strong>샘플 3D 모델입니다.</strong> 사진을 3D로 변환하는 기능은 포함되지 않았습니다. 특정 사진을 회전하려면 별도의 3D 재구성/생성 단계가 필요합니다.<div class="credit">기본 모델 Cesium Man · © Cesium 2017 · CC BY 4.0 (Cesium 로고/상표 별도 고지)<br>TRELLIS.2 프리셋은 별도 생성 샘플이며 Cesium 라이선스가 적용되지 않습니다. 출처·이용 조건은 THIRD-PARTY-NOTICES.md를 확인해 주세요.<br>카메라 참고: image-blaster · MIT License</div></div></aside></main>
+<div class="disclaimer"><strong>샘플 3D 모델입니다.</strong> 사진을 3D로 변환하는 기능은 포함되지 않았습니다. 특정 사진을 회전하려면 별도의 3D 재구성/생성 단계가 필요합니다. 후드 여행자 프리셋은 단일 이미지로 추정 생성되어 정확한 뒷모습·해부학·리깅을 보장하지 않습니다.<div class="credit">기본 모델 Cesium Man · © Cesium 2017 · CC BY 4.0 (Cesium 로고/상표 별도 고지)<br>TRELLIS.2 프리셋은 별도 생성 샘플이며 Cesium 라이선스가 적용되지 않습니다. 출처·이용 조건은 THIRD-PARTY-NOTICES.md를 확인해 주세요.<br>카메라 참고: image-blaster · MIT License</div></div></aside></main>
 <footer class="footer"><span>LOCAL INTERACTIVE DEMO · NO SERVER REQUIRED</span><span>THREE.JS r180 · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0</a></span></footer>
 <script>(() => {
   // node_modules/three/build/three.core.js
@@ -32211,12 +32211,15 @@ void main() {
       loadModel(initialBytes.buffer, "Cesium Man");
       return;
     }
-    if (modelPreset.value !== "trellis") return;
+    if (modelPreset.value !== "trellis" && modelPreset.value !== "person") return;
+    const personPreset = modelPreset.value === "person";
+    const asset = personPreset ? "./assets/trellis2-hooded-person.glb" : "./assets/trellis2-official-T.glb";
+    const label = personPreset ? "TRELLIS.2 · 인물 (후드 여행자)" : "TRELLIS.2 · T형 기계 (로컬 생성)";
     setStatus("TRELLIS.2 프리셋을 불러오는 중…");
     try {
-      const response = await fetch("./assets/trellis2-official-T.glb");
+      const response = await fetch(asset);
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      loadModel(await response.arrayBuffer(), "TRELLIS.2 · T형 기계 (로컬 생성)");
+      loadModel(await response.arrayBuffer(), label);
     } catch (err) {
       setStatus(`TRELLIS.2 프리셋을 불러오지 못했습니다. (${err.message})`, true);
     }

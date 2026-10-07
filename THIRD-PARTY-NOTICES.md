@@ -37,3 +37,7 @@ Source: https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/Cesi
 ## TRELLIS.2 generated test sample
 
 `assets/trellis2-official-T.glb` is a locally generated TRELLIS.2 sample model. It is a separate generated asset, not the Cesium Man sample, and the Cesium Man CC BY 4.0 notice above does not apply to it. No independent license grant, third-party terms, or permission for commercial use is asserted here. Users should establish the applicable rights and terms for their intended use.
+
+## TRELLIS.2 generated hooded traveler test sample
+
+`assets/trellis2-hooded-person.glb` is a locally generated TRELLIS.2 sample based on a single public, fully clothed reference image from the Microsoft TRELLIS.2 repository. The generated back view and anatomy are estimates; identity, anatomical completeness, rigging, and commercial-use rights are not guaranteed. This generated asset is separate from the Cesium Man sample and no independent license grant or commercial-use permission is asserted. The Cesium Man CC BY 4.0 notice above does not apply.
