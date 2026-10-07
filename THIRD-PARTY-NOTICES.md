@@ -55,3 +55,7 @@ Pikachu is a Pokémon character. Character attribution: © Nintendo / Creatures 
 ## Baseball detail comparison derivatives
 
 `assets/baseball-geometry.glb`, `baseball-projection.glb`, `baseball-hires.glb` and `baseball-retexture.glb` are locally generated or edited derivatives for comparing detail refinement against the initial ChatGPT-generated baseball image. The geometry variant uses Blender mesh detail; projection uses a baked reference-image texture; the high-resolution variant combines TRELLIS.2 regeneration with Blender ball/contact detail; retexture uses TRELLIS.2 shape-conditioned texture generation. The initial reference is included as `assets/baseball-reference.png`. These static, single-image estimates retain limitations in unseen surfaces, anatomy and exact shape correspondence. They are separate from Cesium Man and its CC BY 4.0 notice does not apply. No additional commercial-use permission is asserted. Production record: JOB-4172.
+
+## Pelican bicycle fan scene
+
+`assets/pelican-bicycle.glb` is a Blender-authored reconstruction of the pelican-and-bicycle WebGL scene in a user project. It is a fan-made technical sample, not an official animal or bicycle asset, and no independent license grant or commercial-use permission is asserted. Its source and procedural build are recorded under JOB-4180 and the local 3D modeling workbench asset.

@@ -36,6 +36,7 @@ ChatGPT에서 생성하고 알파 배경을 보정한 입력 이미지 한 장�
 | 야구 타격 순간 | https://pheanor-agent.github.io/person-orbit-demo/?model=baseball |
 | 피카츄 · Sol | https://pheanor-agent.github.io/person-orbit-demo/?model=pikachu-sol |
 | 피카츄 · Astra | https://pheanor-agent.github.io/person-orbit-demo/?model=pikachu-astra |
+| 펠리컨 · 자전거 | https://pheanor-agent.github.io/person-orbit-demo/?model=pelican |
 
 ## 피카츄 비교 샘플
 
@@ -55,3 +56,7 @@ GPT-6.1 Sol과 GPT-6 Astra가 공식 외형 참고와 같은 16초 동작 구성
 기존 야구 모델은 알파 배경과 공 위치를 교정한 이미지로 생성됐습니다. 이번 비교의 기준은 최초 원본이며, 단일 사진에 보이지 않는 뒷면과 손가락 등은 추정입니다. 형상·투영·재질 방식은 기존 자세를 유지하므로 원본의 모든 형태를 재현하지 않습니다. 고해상도 재생성도 자동 생성 후 공을 수동 보정한 혼합 방식입니다. 정적 메시이며 스윙 애니메이션은 없습니다. 세부 제작 근거는 JOB-4172와 각 로컬 어셋의 provenance/docs에 있습니다.
 
 고해상도 보정본은 공 주변의 어두운 생성 흔적이 남습니다. AI 재질본은 기존 공 위치를 유지하고 실밥이 흐립니다. 모든 방식이 원본의 세부를 똑같이 개선하는 것은 아니므로 같은 각도에서 비교해 선택하세요.
+
+## 펠리컨 · 자전거
+
+[바로 열기](https://pheanor-agent.github.io/person-orbit-demo/?model=pelican) · [GLB 다운로드](https://pheanor-agent.github.io/person-orbit-demo/assets/pelican-bicycle.glb). 원래 WebGL 장면의 펠리컨과 자전거 형상을 Blender에서 animated GLB로 재구성했습니다. 4초 루프에 다리 IK, 페달 2회전, 바퀴 5회전을 베이크했으며 공통 애니메이션 재생·일시정지·타임라인·속도 제어를 사용합니다. 바닥·도로·카메라·조명은 GLB에 포함하지 않았습니다. 제작 소스와 한계는 JOB-4180 및 어셋 기록에 있습니다.

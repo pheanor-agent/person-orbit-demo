@@ -16,7 +16,7 @@
 <header class="topbar"><div class="brand"><div class="mark" aria-hidden="true"></div><div><div class="brand-title">ORBIT / OBJECT VIEWER</div><div class="brand-sub">CHARACTER STUDY · MODEL COLLECTION</div></div></div><div class="top-meta"><span>INTERACTIVE / 3D</span><span class="live"><i></i> RENDER READY</span></div></header>
 <main class="layout"><section class="viewport-wrap" aria-label="움직이는 3D 모델 뷰"><canvas id="stage" class="stage" aria-label="드래그하여 모델 주변의 시점을 회전하는 3D 장면"></canvas><div class="scene-label"><strong>01</strong> &nbsp; / &nbsp; ORBITAL VIEW</div><div class="crosshair" aria-hidden="true"></div><div class="hint">드래그 · 회전 &nbsp;&nbsp; 휠 / 핀치 · 줌</div></section>
 <aside class="panel"><section class="object-card"><div class="eyebrow">선택된 오브젝트</div><div class="object-head"><div class="object-name" id="modelName">Cesium Man</div><div class="badge" id="modelBadge">GLB MODEL</div></div><div class="dimensions" id="modelDims">로딩 중…</div><div class="rule"></div><div class="status" id="status" role="status" aria-live="polite">초기화 중…</div></section>
-<section class="section"><div class="section-title"><span class="eyebrow">샘플 선택</span><span>COLLECTION</span></div><select class="preset-select" id="modelPreset" aria-label="샘플 모델"><option value="cesium" selected>Cesium Man · 걷기</option><option value="pikachu-sol">피카츄 · Sol</option><option value="pikachu-astra">피카츄 · Astra</option><option value="trellis">TRELLIS.2 · T형 기계</option><option value="person">TRELLIS.2 · 후드 여행자</option><option value="baseball">TRELLIS.2 · 야구 타격 순간</option><option value="baseball-geometry">야구 · 형상 보정</option><option value="baseball-projection">야구 · 원본 이미지 투영</option><option value="baseball-hires">야구 · 고해상도 + 공 보정</option><option value="baseball-retexture">야구 · AI 재질 보정</option></select><div class="sample-links"><a id="sampleLink" href="?model=cesium">이 샘플 바로 열기 ↗</a><button id="copyLink" type="button">링크 복사</button></div></section>
+<section class="section"><div class="section-title"><span class="eyebrow">샘플 선택</span><span>COLLECTION</span></div><select class="preset-select" id="modelPreset" aria-label="샘플 모델"><option value="cesium" selected>Cesium Man · 걷기</option><option value="pikachu-sol">피카츄 · Sol</option><option value="pikachu-astra">피카츄 · Astra</option><option value="trellis">TRELLIS.2 · T형 기계</option><option value="person">TRELLIS.2 · 후드 여행자</option><option value="baseball">TRELLIS.2 · 야구 타격 순간</option><option value="baseball-geometry">야구 · 형상 보정</option><option value="baseball-projection">야구 · 원본 이미지 투영</option><option value="baseball-hires">야구 · 고해상도 + 공 보정</option><option value="baseball-retexture">야구 · AI 재질 보정</option><option value="pelican">펠리컨 · 자전거</option></select><div class="sample-links"><a id="sampleLink" href="?model=cesium">이 샘플 바로 열기 ↗</a><button id="copyLink" type="button">링크 복사</button></div></section>
 <section class="section motion-section" id="motionControls" hidden><div class="section-title"><span class="eyebrow">애니메이션</span><span id="motionPhase">반복 동작</span></div><div class="motion-buttons"><button class="button" id="motionPlay" aria-pressed="true">Ⅱ 동작 일시정지</button><button class="button" id="motionRestart" aria-label="동작 처음부터">↺ 처음부터</button></div><input id="motionTimeline" type="range" min="0" max="16" value="0" step="0.01" aria-label="애니메이션 재생 위치"><div class="motion-time"><span id="motionTime">0.0 / 16.0초</span><label>속도 <select id="motionSpeed" aria-label="애니메이션 속도"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option></select></label></div></section>
 
 
@@ -32300,20 +32300,21 @@ void main() {
       const size = bounds.getSize(new Vector3());
       const center = bounds.getCenter(new Vector3());
       const isPikachu = loadedPreset.startsWith("pikachu-");
+      const isLightScene = isPikachu || loadedPreset === "pelican";
       if (isPikachu) applyPikachuStyle(gltf.scene);
       canvas.parentElement.classList.toggle("anime-scene", isPikachu);
-      scene.background.set(isPikachu ? "#eef4f8" : "#111416");
+      scene.background.set(isLightScene ? "#eef4f8" : "#111416");
       scene.fog.color.copy(scene.background);
-      floor.material.color.set(isPikachu ? "#e4ebf1" : 1580061);
-      floor.material.metalness = isPikachu ? 0 : 0.16;
-      grid.visible = !isPikachu;
-      ring.visible = !isPikachu;
-      const fit = (isPikachu ? 2.25 : 2.65) / Math.max(size.x, size.y, size.z, 1e-3);
+      floor.material.color.set(isLightScene ? "#e4ebf1" : 1580061);
+      floor.material.metalness = isLightScene ? 0 : 0.16;
+      grid.visible = !isLightScene;
+      ring.visible = !isLightScene;
+      const fit = (isLightScene ? 2.25 : 2.65) / Math.max(size.x, size.y, size.z, 1e-3);
       modelRoot.scale.setScalar(fit);
       modelRoot.position.set(-center.x * fit, -bounds.min.y * fit, -center.z * fit);
       world.add(modelRoot);
-      target.set(0, Math.max(0.65, size.y * fit * (isPikachu ? 0.58 : 0.48)), 0);
-      defaultDistance = isPikachu ? 5.5 : 5.1;
+      target.set(0, Math.max(0.65, size.y * fit * (isLightScene ? 0.58 : 0.48)), 0);
+      defaultDistance = isLightScene ? 5.5 : 5.1;
       distance = defaultDistance;
       mixer = new AnimationMixer(gltf.scene);
       activeAnimations = gltf.animations || [];
@@ -32336,6 +32337,7 @@ void main() {
   for (let i = 0; i < embedded.length; i++) initialBytes[i] = embedded.charCodeAt(i);
   const modelPreset = document.querySelector("#modelPreset");
   const generatedPresets = {
+    pelican: { asset: "./assets/pelican-bicycle.glb?v=14ce145bb571", label: "펠리컨 · 자전거" },
     "baseball-geometry": { asset: "./assets/baseball-geometry.glb", label: "야구 · 형상 보정", note: "기존 자세를 유지하며 공과 실밥·장갑 봉제선을 3D로 보정했습니다. 기존 공을 제거한 배트 표면에는 복원 패치가 남아 있습니다." },
     "baseball-projection": { asset: "./assets/baseball-projection.glb", label: "야구 · 원본 이미지 투영", note: "원본의 목재색을 배트의 보이는 부분에만 부드럽게 투영해 4K 텍스처로 베이크했습니다. 다른 부위와 뒷면은 기존 질감을 유지합니다." },
     "baseball-hires": { asset: "./assets/baseball-hires.glb", label: "야구 · 고해상도 + 공 보정", note: "최초 원본으로 1536 해상도에서 다시 생성한 뒤, 공과 실밥·배트 접촉을 Blender로 다듬었습니다. 접촉부 주변의 어두운 생성 흔적은 남아 있습니다." },
