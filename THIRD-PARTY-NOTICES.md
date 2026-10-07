@@ -47,3 +47,7 @@ Source: https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/Cesi
 `assets/baseball-impact.glb` was generated locally with Microsoft TRELLIS.2 from a ChatGPT-generated baseball batting image whose alpha background was corrected before generation. Settings: `1024_cascade`, seed 42, target 100,000 triangles and 2048 texture resolution. This is a static, single-image estimate with no skeleton or swing animation. Back-view anatomy, fingers and ball seam details may be inaccurate. It is separate from Cesium Man; the Cesium Man CC BY 4.0 notice does not apply. No independent license grant or commercial-use permission is asserted.
 
 Generation software source: https://github.com/microsoft/TRELLIS.2
+
+## Pikachu comparison fan models
+
+Pikachu is a Pokémon character. Character attribution: © Nintendo / Creatures Inc. / GAME FREAK inc. The Sol and Astra samples are independent Blender-authored fan models for this technical demonstration, not official Pokémon assets. The Cesium Man CC BY 4.0 notice does not apply to these models. Modeling reference: https://www.pokemon.com/us/pokedex/pikachu.
