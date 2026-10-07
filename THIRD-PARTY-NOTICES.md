@@ -41,3 +41,9 @@ Source: https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/Cesi
 ## TRELLIS.2 generated hooded traveler test sample
 
 `assets/trellis2-hooded-person.glb` is a locally generated TRELLIS.2 sample based on a single public, fully clothed reference image from the Microsoft TRELLIS.2 repository. The generated back view and anatomy are estimates; identity, anatomical completeness, rigging, and commercial-use rights are not guaranteed. This generated asset is separate from the Cesium Man sample and no independent license grant or commercial-use permission is asserted. The Cesium Man CC BY 4.0 notice above does not apply.
+
+## TRELLIS.2 generated baseball impact test sample
+
+`assets/baseball-impact.glb` was generated locally with Microsoft TRELLIS.2 from a ChatGPT-generated baseball batting image whose alpha background was corrected before generation. Settings: `1024_cascade`, seed 42, target 100,000 triangles and 2048 texture resolution. This is a static, single-image estimate with no skeleton or swing animation. Back-view anatomy, fingers and ball seam details may be inaccurate. It is separate from Cesium Man; the Cesium Man CC BY 4.0 notice does not apply. No independent license grant or commercial-use permission is asserted.
+
+Generation software source: https://github.com/microsoft/TRELLIS.2
