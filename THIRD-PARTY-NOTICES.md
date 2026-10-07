@@ -50,4 +50,4 @@ Generation software source: https://github.com/microsoft/TRELLIS.2
 
 ## Pikachu comparison fan models
 
-Pikachu is a Pokémon character. Character attribution: © Nintendo / Creatures Inc. / GAME FREAK inc. The Sol and Astra samples are independent Blender-authored fan models for this technical demonstration, not official Pokémon assets. The Cesium Man CC BY 4.0 notice does not apply to these models. Modeling reference: https://www.pokemon.com/us/pokedex/pikachu.
+Pikachu is a Pokémon character. Character attribution: © Nintendo / Creatures Inc. / GAME FREAK inc. The Sol and Astra samples are independent Blender-authored fan models for this technical demonstration, not official Pokémon assets. The Cesium Man CC BY 4.0 notice does not apply to these models. Modeling references: https://www.pokemon.com/us/pokedex/pikachu and https://www.tv-tokyo.co.jp/anime/pokemon_xyz/chara/ . Official episode screenshots were inspected as visual references only and are not bundled with this demo.
