@@ -51,3 +51,7 @@ Generation software source: https://github.com/microsoft/TRELLIS.2
 ## Pikachu comparison fan models
 
 Pikachu is a Pokémon character. Character attribution: © Nintendo / Creatures Inc. / GAME FREAK inc. The Sol and Astra samples are independent Blender-authored fan models for this technical demonstration, not official Pokémon assets. The Cesium Man CC BY 4.0 notice does not apply to these models. Modeling references: https://www.pokemon.com/us/pokedex/pikachu and https://www.tv-tokyo.co.jp/anime/pokemon_xyz/chara/ . Official episode screenshots were inspected as visual references only and are not bundled with this demo.
+
+## Baseball detail comparison derivatives
+
+`assets/baseball-geometry.glb`, `baseball-projection.glb`, `baseball-hires.glb` and `baseball-retexture.glb` are locally generated or edited derivatives for comparing detail refinement against the initial ChatGPT-generated baseball image. The geometry variant uses Blender mesh detail; projection uses a baked reference-image texture; the high-resolution variant combines TRELLIS.2 regeneration with Blender ball/contact detail; retexture uses TRELLIS.2 shape-conditioned texture generation. The initial reference is included as `assets/baseball-reference.png`. These static, single-image estimates retain limitations in unseen surfaces, anatomy and exact shape correspondence. They are separate from Cesium Man and its CC BY 4.0 notice does not apply. No additional commercial-use permission is asserted. Production record: JOB-4172.
