@@ -1,7 +1,7 @@
 # ORBIT — 움직이는 3D 모델 감상 데모
 
 ## 실행
-[GitHub Pages에서 데모 열기](https://pheanor-agent.github.io/person-orbit-demo/). 별도 설치 없이 브라우저에서 실행됩니다. Three.js r180과 기본 GLB 샘플이 HTML 안에 포함되어 있습니다.
+[GitHub Pages에서 데모 열기](https://pheanor-agent.github.io/person-orbit-demo/). 별도 설치 없이 브라우저에서 실행됩니다. Three.js r180과 기본 GLB 샘플은 두 페이지가 공유하는 `viewer.js`에 포함되어 있습니다.
 
 ## 조작
 - 뷰포트 드래그(터치 가능): 모델 주위 카메라 회전
@@ -9,8 +9,9 @@
 - 자동 회전 시작/멈춤: 일정한 속도로 수평 회전
 - 시점 초기화: 정면 기본 구도 복구 및 자동 회전 정지
 - 정면/측면/후면: 빠른 기준 시점 선택
-- 테스트 모델 프리셋: 기본 Cesium Man, 피카츄 Sol/Astra, TRELLIS.2로 로컬 생성한 T형 기계, 단일 입력 이미지에서 생성한 후드 여행자, 또는 야구 타격 순간 샘플 선택 (생성 프리셋은 페이지에서 GLB를 내려받음)
-- 각 샘플은 `?model=<ID>` 주소로 바로 열 수 있으며 선택하면 주소와 바로 열기 링크가 함께 갱신됩니다.
+- 대표 컬렉션은 Cesium Man, T형 기계, 후드 여행자, 펠리컨, 야구 대표, 피카츄 Sol 6개만 표시합니다. 여러 버전 비교는 [모델 실험실](./lab.html)에서 종류를 고른 뒤 버전을 선택하세요.
+- 각 대표 샘플은 `?model=<ID>` 주소로 바로 열 수 있습니다. 실험 버전 주소도 기존 `?model=<ID>` 형식을 유지하며, 메인 페이지에서 열면 실험실의 해당 버전으로 이동합니다.
+- 실험실은 현재 두 가지 이상 준비된 야구(5종)·피카츄(2종)만 표시합니다. 펠리컨 benchmark GLB가 추가되면 `node scripts/merge-lab-variants.mjs`로 실험실 catalog에 병합할 수 있으며, 성공 상태와 실제 GLB가 모두 확인된 항목만 노출합니다.
 - 링크 복사: 현재 샘플의 주소를 복사합니다.
 - 애니메이션: 일시정지/재생, 처음부터, 재생 위치 이동, 0.5×/1×/1.5× 속도 조절. 카메라 회전과 동작 재생은 독립적입니다.
 
@@ -33,7 +34,7 @@ ChatGPT에서 생성하고 알파 배경을 보정한 입력 이미지 한 장�
 | Cesium Man | https://pheanor-agent.github.io/person-orbit-demo/?model=cesium |
 | T형 기계 | https://pheanor-agent.github.io/person-orbit-demo/?model=trellis |
 | 후드 여행자 | https://pheanor-agent.github.io/person-orbit-demo/?model=person |
-| 야구 타격 순간 | https://pheanor-agent.github.io/person-orbit-demo/?model=baseball |
+| 야구 대표 · 타격 순간 | https://pheanor-agent.github.io/person-orbit-demo/?model=baseball |
 | 피카츄 · Sol | https://pheanor-agent.github.io/person-orbit-demo/?model=pikachu-sol |
 | 피카츄 · Astra | https://pheanor-agent.github.io/person-orbit-demo/?model=pikachu-astra |
 | 펠리컨 · 자전거 | https://pheanor-agent.github.io/person-orbit-demo/?model=pelican |
@@ -61,10 +62,18 @@ GPT-6.1 Sol과 GPT-6 Astra가 공식 외형 참고와 같은 16초 동작 구성
 
 [바로 열기](https://pheanor-agent.github.io/person-orbit-demo/?model=pelican) · [GLB 다운로드](https://pheanor-agent.github.io/person-orbit-demo/assets/pelican-bicycle.glb). 원래 WebGL 장면의 펠리컨과 자전거 형상을 Blender에서 animated GLB로 재구성했습니다. 4초 루프에 다리 IK, 페달 2회전, 바퀴 5회전을 베이크했으며 공통 애니메이션 재생·일시정지·타임라인·속도 제어를 사용합니다. 바닥·도로·카메라·조명은 GLB에 포함하지 않았습니다. 제작 소스와 한계는 JOB-4180 및 어셋 기록에 있습니다.
 
-## 펼친 모델 목록과 360° 배경
+## 모델 실험실과 360° 배경
 
-모델은 항상 보이는 버튼 목록에서 선택합니다. 야구 타격 샘플 5종과 피카츄 2종은 접고 펼칠 수 있는 그룹으로 묶었습니다. `어셋에 맞춤 · 자동`이 기본 모드이며 Cesium Man→도시 안뜰, T형 기계→기계 작업장, 후드 여행자→숲길, 야구 5종→경기장, 피카츄 Sol/Astra→햇살 초원, 펠리컨→포장 시골길을 적용합니다. 모델을 바꿀 때 자동 모드만 추천 배경으로 따라가며, 배경을 직접 선택하면 모델을 바꿔도 유지됩니다. `자동`을 누르면 현재 모델 추천으로 돌아옵니다. 단색 스튜디오도 수동 선택으로 제공됩니다.
+대표 페이지는 여섯 대표만 표시하고 변형 비교 UI는 두지 않습니다. [실험실](./lab.html)에서는 종류 선택 후 그 종류의 버전을 선택하는 두 단계 UI를 사용합니다. `collection-catalog.json`이 대표 ID와 종류별 버전을 함께 관리합니다. 각 페이지는 공통 `viewer.js`와 Three.js 런타임을 사용합니다.
 
-`?model=...&background=...` 조합은 모델/배경 링크 복사, 비교 링크, 브라우저 뒤로·앞으로 및 직접 재진입에 유지됩니다. `background`를 생략하거나 `background=auto`이면 자동 모드이며, `background=default`는 수동 단색입니다. 도시 안뜰·기계 작업장·숲길·경기장·햇살 초원·호숫가 부두·포장 시골길 외에 가을 공원도 수동으로 선택할 수 있습니다. 파노라마 JPG는 Three.js equirectangular 매핑이며 카메라 드래그로 계속 회전할 수 있습니다. 야구에는 야구 전용 구장이 아닌 일반 경기장 파노라마를 사용합니다. 파노라마가 실제 적용된 동안 뷰어의 바닥 원판·grid·ring은 숨기며 GLB 형상에는 변경을 가하지 않습니다. 단색 스튜디오로 돌아오면 원판을 다시 표시합니다.
+각 실험실 버전에는 현재 GLB 다운로드 링크가 있습니다. benchmark 병합 스크립트는 `experiments/pelican-comparison/lab-variants.json`을 입력으로 읽고 `assets/pelican-experiments/<id>.glb` 파일이 실제 존재하며 상태가 success인 항목만 공개합니다. 실패 row는 `asset: null`이어도 안전하게 건너뜁니다. manifest가 없으면 펠리컨 실험 버전은 추가하지 않습니다.
+
+`어셋에 맞춤 · 자동`이 기본 모드이며 Cesium Man→도시 안뜰, T형 기계→기계 작업장, 후드 여행자→숲길, 야구→경기장, 피카츄→햇살 초원, 펠리컨→포장 시골길을 적용합니다. 모델을 바꿀 때 자동 모드만 추천 배경으로 따라가며, 배경을 직접 선택하면 모델을 바꿔도 유지됩니다. `자동`을 누르면 현재 모델 추천으로 돌아옵니다. 단색 스튜디오도 수동 선택으로 제공됩니다.
+
+대표 주소는 `?model=<ID>&background=<ID>`를 사용합니다. 실험실은 `?model=<ID>` 또는 `?family=<종류>&variant=<버전>&background=<ID>`로 바로 열 수 있습니다. 실험실에서 버전을 선택하면 family와 variant를 함께 기록하며 종류 변경은 대표 버전을 로드합니다. 뒤로·앞으로 탐색은 현재 URL의 모델·종류·배경을 복원하고 추가 history 항목을 만들지 않습니다. `background`를 생략하거나 `background=auto`이면 자동 모드이며, `background=default`는 수동 단색입니다. 도시 안뜰·기계 작업장·숲길·경기장·햇살 초원·호숫가 부두·포장 시골길 외에 가을 공원도 수동으로 선택할 수 있습니다. 파노라마 JPG는 Three.js equirectangular 매핑이며 카메라 드래그로 계속 회전할 수 있습니다. 야구에는 야구 전용 구장이 아닌 일반 경기장 파노라마를 사용합니다. 파노라마가 실제 적용된 동안 뷰어의 바닥 원판·grid·ring은 숨기며 GLB 형상에는 변경을 가하지 않습니다. 단색 스튜디오로 돌아오면 원판을 다시 표시합니다.
 
 Poly Haven의 CC0 원본은 공식 tonemapped JPG를 4096×2048로 축소해 `assets/backgrounds/`에 포함했습니다. 출처 URL, CC0, 가공 내역, 경로와 SHA-256은 [`assets/backgrounds/catalog.json`](assets/backgrounds/catalog.json)에 있습니다. meadow_2의 8K tonemapped JPG가 제공되어 HDR tone-map이나 대체 이미지 없이 사용했습니다. 상세 고지는 `THIRD-PARTY-NOTICES.md`를 확인하세요.
+
+실험실은 종류와 버전 두 개의 접힌 선택 메뉴를 제공합니다. 대표 컬렉션은 중앙 representatives를 사용하고 현재 종류의 실험실 링크는 배경 선택을 유지합니다. 최초 원본 야구 이미지와 보정 설명은 실험실에서 볼 수 있습니다.
+
+개발 검증은 `npm test`입니다. 선택적으로 `npm install` 후 `python3 -m http.server 8877`로 서버를 띄우고 다른 터미널에서 `npm run test:browser`를 실행할 수 있습니다. `ORBIT_SCREENSHOTS`로 캡처 위치를 지정할 수 있습니다.

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "representatives": {
+    "cesium": "cesium",
+    "trellis": "trellis",
+    "person": "person",
+    "pelican": "pelican",
+    "baseball": "baseball",
+    "pikachu": "pikachu-sol"
+  },
+  "models": {
+    "pelican": { "asset": "./assets/pelican-bicycle.glb?v=14ce145bb571", "label": "펠리컨 · 자전거", "family": "pelican" },
+    "baseball": { "asset": "./assets/baseball-impact.glb", "label": "TRELLIS.2 · 야구 타격 순간", "family": "baseball" },
+    "baseball-geometry": { "asset": "./assets/baseball-geometry.glb", "label": "야구 · 형상 보정", "note": "기존 자세를 유지하며 공과 실밥·장갑 봉제선을 3D로 보정했습니다. 기존 공을 제거한 배트 표면에는 복원 패치가 남아 있습니다.", "family": "baseball" },
+    "baseball-projection": { "asset": "./assets/baseball-projection.glb", "label": "야구 · 원본 이미지 투영", "note": "원본의 목재색을 배트의 보이는 부분에만 부드럽게 투영해 4K 텍스처로 베이크했습니다. 다른 부위와 뒷면은 기존 질감을 유지합니다.", "family": "baseball" },
+    "baseball-hires": { "asset": "./assets/baseball-hires.glb", "label": "야구 · 고해상도 + 공 보정", "note": "최초 원본으로 1536 해상도에서 다시 생성한 뒤, 공과 실밥·배트 접촉을 Blender로 다듬었습니다. 접촉부 주변의 어두운 생성 흔적은 남아 있습니다.", "family": "baseball" },
+    "baseball-retexture": { "asset": "./assets/baseball-retexture.glb", "label": "야구 · AI 재질 보정", "note": "기존 형상을 바탕으로 원본 이미지의 재질을 다시 생성했습니다. 공 위치와 자세는 기존 모델을 유지하며 실밥은 흐리게 남아 있습니다.", "family": "baseball" },
+    "trellis": { "asset": "./assets/trellis2-official-T.glb", "label": "TRELLIS.2 · T형 기계 (로컬 생성)", "family": "trellis" },
+    "person": { "asset": "./assets/trellis2-hooded-person.glb", "label": "TRELLIS.2 · 인물 (후드 여행자)", "family": "person" },
+    "pikachu-sol": { "asset": "./assets/pikachu-sol.glb?v=3ee11c5d1d3a", "label": "피카츄 · Sol", "family": "pikachu" },
+    "pikachu-astra": { "asset": "./assets/pikachu-astra.glb?v=b421da9d5302", "label": "피카츄 · Astra", "family": "pikachu" }
+  },
+  "families": {
+    "baseball": { "label": "야구 타자", "variants": [
+      { "id": "baseball", "label": "기본 타격 순간", "model": "baseball", "asset": "./assets/baseball-impact.glb", "status": "success" },
+      { "id": "baseball-geometry", "label": "형상 보정", "model": "baseball-geometry", "asset": "./assets/baseball-geometry.glb", "status": "success" },
+      { "id": "baseball-projection", "label": "원본 이미지 투영", "model": "baseball-projection", "asset": "./assets/baseball-projection.glb", "status": "success" },
+      { "id": "baseball-hires", "label": "고해상도 + 공 보정", "model": "baseball-hires", "asset": "./assets/baseball-hires.glb", "status": "success" },
+      { "id": "baseball-retexture", "label": "AI 재질 보정", "model": "baseball-retexture", "asset": "./assets/baseball-retexture.glb", "status": "success" }
+    ]},
+    "pikachu": { "label": "피카츄", "variants": [
+      { "id": "pikachu-sol", "label": "Sol", "model": "pikachu-sol", "asset": "./assets/pikachu-sol.glb", "status": "success" },
+      { "id": "pikachu-astra", "label": "Astra", "model": "pikachu-astra", "asset": "./assets/pikachu-astra.glb", "status": "success" }
+    ]},
+    "pelican": { "label": "펠리컨", "variants": [] }
+  }
+}
