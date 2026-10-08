@@ -4,9 +4,11 @@
     "cesium": "cesium",
     "trellis": "trellis",
     "person": "person",
-    "pelican": "pelican",
+    "pelican": "sol-quality-pelican-reviewed",
     "baseball": "baseball",
-    "pikachu": "pikachu-sol"
+    "pikachu": "pikachu-sol",
+    "lamp": "sol-quality-lamp-reviewed",
+    "garden": "sol-quality-garden-reviewed"
   },
   "models": {
     "pelican": {
@@ -312,6 +314,150 @@
       "repeat": 2,
       "state": "first-pass",
       "note": "4초 루프 · 발/페달 접촉 검증 · 82점"
+    },
+    "sol-quality-pelican-baseline": {
+      "asset": "./assets/sol-quality/sol-quality-pelican-baseline/model.glb",
+      "label": "펠리컨 · 자전거",
+      "family": "pelican",
+      "author_model": "gpt-6.1-sol",
+      "route": "selected-source-production",
+      "state": "baseline",
+      "note": "좋은 조형을 가진 첫 제출. 이후 제작 수정의 원본으로 채택했습니다.",
+      "presentation": {
+        "yaw": 0.6,
+        "pitch": 0.2,
+        "light_scene": true,
+        "distance": 6.2,
+        "target_height_factor": 0.48
+      }
+    },
+    "sol-quality-pelican-preset-first": {
+      "asset": "./assets/sol-quality/sol-quality-pelican-preset-first/model.glb",
+      "label": "펠리컨 · 자전거",
+      "family": "pelican",
+      "author_model": "gpt-6.1-sol",
+      "route": "selected-source-production",
+      "state": "preset-first",
+      "note": "형태 검토에서 개별 소스보다 낮게 평가된 프리셋 초안입니다. 초기 유기체 연결 실패를 보존한 버전입니다.",
+      "presentation": {
+        "yaw": 0.6,
+        "pitch": 0.2,
+        "light_scene": true,
+        "distance": 6.2,
+        "target_height_factor": 0.48
+      }
+    },
+    "sol-quality-pelican-reviewed": {
+      "asset": "./assets/sol-quality/sol-quality-pelican-reviewed/model.glb",
+      "label": "펠리컨 · 자전거",
+      "family": "pelican",
+      "author_model": "gpt-6.1-sol",
+      "route": "selected-source-production",
+      "state": "reviewed",
+      "note": "좋은 첫 조형을 유지한 제작 수정본. AI 매니저가 실제 화면을 검토했으며 독립 재시험은 아닙니다.",
+      "presentation": {
+        "yaw": 0.6,
+        "pitch": 0.2,
+        "light_scene": true,
+        "distance": 6.2,
+        "target_height_factor": 0.48
+      }
+    },
+    "sol-quality-lamp-baseline": {
+      "asset": "./assets/sol-quality/sol-quality-lamp-baseline/model.glb",
+      "label": "디자이너 램프",
+      "family": "lamp",
+      "author_model": "gpt-6.1-sol",
+      "route": "selected-source-production",
+      "state": "baseline",
+      "note": "좋은 조형을 가진 첫 제출. 이후 제작 수정의 원본으로 채택했습니다.",
+      "presentation": {
+        "yaw": 0.6,
+        "pitch": 0.2,
+        "light_scene": true,
+        "distance": 6.2,
+        "target_height_factor": 0.48
+      }
+    },
+    "sol-quality-lamp-preset-first": {
+      "asset": "./assets/sol-quality/sol-quality-lamp-preset-first/model.glb",
+      "label": "디자이너 램프",
+      "family": "lamp",
+      "author_model": "gpt-6.1-sol",
+      "route": "selected-source-production",
+      "state": "preset-first",
+      "note": "형태 검토에서 개별 소스보다 낮게 평가된 프리셋 초안입니다.",
+      "presentation": {
+        "yaw": 0.6,
+        "pitch": 0.2,
+        "light_scene": true,
+        "distance": 6.2,
+        "target_height_factor": 0.48
+      }
+    },
+    "sol-quality-lamp-reviewed": {
+      "asset": "./assets/sol-quality/sol-quality-lamp-reviewed/model.glb",
+      "label": "디자이너 램프",
+      "family": "lamp",
+      "author_model": "gpt-6.1-sol",
+      "route": "selected-source-production",
+      "state": "reviewed",
+      "note": "좋은 첫 조형을 유지한 제작 수정본. AI 매니저가 실제 화면을 검토했으며 독립 재시험은 아닙니다.",
+      "presentation": {
+        "yaw": 0.6,
+        "pitch": 0.2,
+        "light_scene": true,
+        "distance": 6.2,
+        "target_height_factor": 0.48
+      }
+    },
+    "sol-quality-garden-baseline": {
+      "asset": "./assets/sol-quality/sol-quality-garden-baseline/model.glb",
+      "label": "등대 정원",
+      "family": "garden",
+      "author_model": "gpt-6.1-sol",
+      "route": "selected-source-production",
+      "state": "baseline",
+      "note": "좋은 조형을 가진 첫 제출. 이후 제작 수정의 원본으로 채택했습니다.",
+      "presentation": {
+        "yaw": 0.6,
+        "pitch": 0.2,
+        "light_scene": true,
+        "distance": 6.2,
+        "target_height_factor": 0.48
+      }
+    },
+    "sol-quality-garden-preset-first": {
+      "asset": "./assets/sol-quality/sol-quality-garden-preset-first/model.glb",
+      "label": "등대 정원",
+      "family": "garden",
+      "author_model": "gpt-6.1-sol",
+      "route": "selected-source-production",
+      "state": "preset-first",
+      "note": "형태 검토에서 개별 소스보다 낮게 평가된 프리셋 초안입니다.",
+      "presentation": {
+        "yaw": 0.6,
+        "pitch": 0.2,
+        "light_scene": true,
+        "distance": 6.2,
+        "target_height_factor": 0.48
+      }
+    },
+    "sol-quality-garden-reviewed": {
+      "asset": "./assets/sol-quality/sol-quality-garden-reviewed/model.glb",
+      "label": "등대 정원",
+      "family": "garden",
+      "author_model": "gpt-6.1-sol",
+      "route": "selected-source-production",
+      "state": "reviewed",
+      "note": "좋은 첫 조형을 유지한 제작 수정본. AI 매니저가 실제 화면을 검토했으며 독립 재시험은 아닙니다.",
+      "presentation": {
+        "yaw": 0.6,
+        "pitch": 0.2,
+        "light_scene": true,
+        "distance": 6.2,
+        "target_height_factor": 0.48
+      }
     }
   },
   "families": {
@@ -1195,6 +1341,142 @@
           "loop_wraps": 3,
           "gltf_validation_errors": 0,
           "author_model": "opus"
+        },
+        {
+          "id": "sol-quality-pelican-baseline",
+          "family": "pelican",
+          "state": "baseline",
+          "status": "success",
+          "label": "Sol · 개별 소스 첫 제출",
+          "asset": "./assets/sol-quality/sol-quality-pelican-baseline/model.glb",
+          "preview": "./assets/sol-quality/sol-quality-pelican-baseline/hero.png",
+          "video": "./assets/sol-quality/sol-quality-pelican-baseline/showcase.mp4",
+          "note": "좋은 조형을 가진 첫 제출. 이후 제작 수정의 원본으로 채택했습니다.",
+          "model": "sol-quality-pelican-baseline",
+          "author_model": "gpt-6.1-sol",
+          "route": "quality-production"
+        },
+        {
+          "id": "sol-quality-pelican-preset-first",
+          "family": "pelican",
+          "state": "preset-first",
+          "status": "success",
+          "label": "Sol · 공통 프리셋 첫 제출",
+          "asset": "./assets/sol-quality/sol-quality-pelican-preset-first/model.glb",
+          "preview": "./assets/sol-quality/sol-quality-pelican-preset-first/hero.png",
+          "video": "./assets/sol-quality/sol-quality-pelican-preset-first/showcase.mp4",
+          "note": "형태 검토에서 개별 소스보다 낮게 평가된 프리셋 초안입니다. 초기 유기체 연결 실패를 보존한 버전입니다.",
+          "model": "sol-quality-pelican-preset-first",
+          "author_model": "gpt-6.1-sol",
+          "route": "quality-production"
+        },
+        {
+          "id": "sol-quality-pelican-reviewed",
+          "family": "pelican",
+          "state": "reviewed",
+          "status": "success",
+          "label": "Sol · 선택본 제작 수정",
+          "asset": "./assets/sol-quality/sol-quality-pelican-reviewed/model.glb",
+          "preview": "./assets/sol-quality/sol-quality-pelican-reviewed/hero.png",
+          "video": "./assets/sol-quality/sol-quality-pelican-reviewed/showcase.mp4",
+          "note": "좋은 첫 조형을 유지한 제작 수정본. AI 매니저가 실제 화면을 검토했으며 독립 재시험은 아닙니다.",
+          "model": "sol-quality-pelican-reviewed",
+          "author_model": "gpt-6.1-sol",
+          "route": "quality-production"
+        }
+      ]
+    },
+    "lamp": {
+      "label": "디자이너 램프",
+      "variants": [
+        {
+          "id": "sol-quality-lamp-baseline",
+          "family": "lamp",
+          "state": "baseline",
+          "status": "success",
+          "label": "Sol · 개별 소스 첫 제출",
+          "asset": "./assets/sol-quality/sol-quality-lamp-baseline/model.glb",
+          "preview": "./assets/sol-quality/sol-quality-lamp-baseline/hero.png",
+          "video": "./assets/sol-quality/sol-quality-lamp-baseline/showcase.mp4",
+          "note": "좋은 조형을 가진 첫 제출. 이후 제작 수정의 원본으로 채택했습니다.",
+          "model": "sol-quality-lamp-baseline",
+          "author_model": "gpt-6.1-sol",
+          "route": "quality-production"
+        },
+        {
+          "id": "sol-quality-lamp-preset-first",
+          "family": "lamp",
+          "state": "preset-first",
+          "status": "success",
+          "label": "Sol · 공통 프리셋 첫 제출",
+          "asset": "./assets/sol-quality/sol-quality-lamp-preset-first/model.glb",
+          "preview": "./assets/sol-quality/sol-quality-lamp-preset-first/hero.png",
+          "video": "./assets/sol-quality/sol-quality-lamp-preset-first/showcase.mp4",
+          "note": "형태 검토에서 개별 소스보다 낮게 평가된 프리셋 초안입니다.",
+          "model": "sol-quality-lamp-preset-first",
+          "author_model": "gpt-6.1-sol",
+          "route": "quality-production"
+        },
+        {
+          "id": "sol-quality-lamp-reviewed",
+          "family": "lamp",
+          "state": "reviewed",
+          "status": "success",
+          "label": "Sol · 선택본 제작 수정",
+          "asset": "./assets/sol-quality/sol-quality-lamp-reviewed/model.glb",
+          "preview": "./assets/sol-quality/sol-quality-lamp-reviewed/hero.png",
+          "video": "./assets/sol-quality/sol-quality-lamp-reviewed/showcase.mp4",
+          "note": "좋은 첫 조형을 유지한 제작 수정본. AI 매니저가 실제 화면을 검토했으며 독립 재시험은 아닙니다.",
+          "model": "sol-quality-lamp-reviewed",
+          "author_model": "gpt-6.1-sol",
+          "route": "quality-production"
+        }
+      ]
+    },
+    "garden": {
+      "label": "등대 정원",
+      "variants": [
+        {
+          "id": "sol-quality-garden-baseline",
+          "family": "garden",
+          "state": "baseline",
+          "status": "success",
+          "label": "Sol · 개별 소스 첫 제출",
+          "asset": "./assets/sol-quality/sol-quality-garden-baseline/model.glb",
+          "preview": "./assets/sol-quality/sol-quality-garden-baseline/hero.png",
+          "video": "./assets/sol-quality/sol-quality-garden-baseline/showcase.mp4",
+          "note": "좋은 조형을 가진 첫 제출. 이후 제작 수정의 원본으로 채택했습니다.",
+          "model": "sol-quality-garden-baseline",
+          "author_model": "gpt-6.1-sol",
+          "route": "quality-production"
+        },
+        {
+          "id": "sol-quality-garden-preset-first",
+          "family": "garden",
+          "state": "preset-first",
+          "status": "success",
+          "label": "Sol · 공통 프리셋 첫 제출",
+          "asset": "./assets/sol-quality/sol-quality-garden-preset-first/model.glb",
+          "preview": "./assets/sol-quality/sol-quality-garden-preset-first/hero.png",
+          "video": "./assets/sol-quality/sol-quality-garden-preset-first/showcase.mp4",
+          "note": "형태 검토에서 개별 소스보다 낮게 평가된 프리셋 초안입니다.",
+          "model": "sol-quality-garden-preset-first",
+          "author_model": "gpt-6.1-sol",
+          "route": "quality-production"
+        },
+        {
+          "id": "sol-quality-garden-reviewed",
+          "family": "garden",
+          "state": "reviewed",
+          "status": "success",
+          "label": "Sol · 선택본 제작 수정",
+          "asset": "./assets/sol-quality/sol-quality-garden-reviewed/model.glb",
+          "preview": "./assets/sol-quality/sol-quality-garden-reviewed/hero.png",
+          "video": "./assets/sol-quality/sol-quality-garden-reviewed/showcase.mp4",
+          "note": "좋은 첫 조형을 유지한 제작 수정본. AI 매니저가 실제 화면을 검토했으며 독립 재시험은 아닙니다.",
+          "model": "sol-quality-garden-reviewed",
+          "author_model": "gpt-6.1-sol",
+          "route": "quality-production"
         }
       ]
     }

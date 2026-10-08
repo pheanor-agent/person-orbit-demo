@@ -1,0 +1,70 @@
+{
+  "model": "gpt-6.1-sol",
+  "subjects": [
+    "pelican",
+    "lamp",
+    "garden"
+  ],
+  "new_variants": 9,
+  "representatives": 8,
+  "original_pelican_variants_preserved": 26,
+  "manager_review": "AI; producer-aware; not blind/human",
+  "preferred_initial_construction": "individual source 3/3 over initial preset",
+  "final_lineage": "selected baseline plus production refinement; not independent third benchmark",
+  "glb": [
+    {
+      "subject": "pelican",
+      "duration_s": 3.0,
+      "khronos_errors": 0,
+      "khronos_warnings": 0,
+      "moving_nodes": 198,
+      "morph_channels": 1,
+      "loop_error": 3.4969110629389274e-07
+    },
+    {
+      "subject": "lamp",
+      "duration_s": 3.0,
+      "khronos_errors": 0,
+      "khronos_warnings": 0,
+      "moving_nodes": 26,
+      "morph_channels": 0,
+      "loop_error": 0.0
+    },
+    {
+      "subject": "garden",
+      "duration_s": 3.0,
+      "khronos_errors": 0,
+      "khronos_warnings": 0,
+      "moving_nodes": 293,
+      "morph_channels": 0,
+      "loop_error": 1.7484555314695097e-07
+    }
+  ],
+  "web": {
+    "pelican": {
+      "status": "pass",
+      "wraps": 3,
+      "sample_count": 15,
+      "duration_s": 3
+    },
+    "lamp": {
+      "status": "pass",
+      "wraps": 3,
+      "sample_count": 15,
+      "duration_s": 3
+    },
+    "garden": {
+      "status": "pass",
+      "wraps": 3,
+      "sample_count": 15,
+      "duration_s": 3
+    }
+  },
+  "limits": [
+    "Grades are descriptive manager judgements, not calibrated independent preference evidence.",
+    "Source-only baselines share improved art direction; this does not isolate a causal effect of the original art brief.",
+    "Three held-out aesthetic transfer tasks and reference-conditioned generative image/video have not run.",
+    "Generic custom smoke verifies source/FPS pipeline reuse only."
+  ],
+  "public_report": "https://pheanor-agent.github.io/person-orbit-demo/reports/sol-quality-production.html"
+}

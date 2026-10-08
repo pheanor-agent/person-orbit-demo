@@ -10,12 +10,13 @@ const html = name => readFileSync(new URL(name, root), 'utf8');
 const viewer = html('viewer.js');
 const catalog = JSON.parse(readFileSync(new URL('collection-catalog.json', root), 'utf8'));
 
-test('representative collection exposes exactly six canonical models without variants', () => {
+test('representative collection preserves six historical seed buttons and builds current representatives from catalog', () => {
   const page = html('index.html');
   const ids = [...page.matchAll(/data-model="([^"]+)"/g)].map(match => match[1]);
   assert.deepEqual(ids, ['cesium', 'trellis', 'person', 'pelican', 'baseball', 'pikachu-sol']);
   assert.match(page, /href="\.\/lab\.html"/);
   assert.doesNotMatch(page, /id="baseballComparison"/);
+  assert.match(viewer, /Object\.entries\(collectionCatalog\.representatives\)/);
 });
 
 test('lab page is separate and links to representative collection', () => {
@@ -26,9 +27,13 @@ test('lab page is separate and links to representative collection', () => {
   assert.match(viewer, /collection-catalog\.json/);
 });
 
-test('catalog has six representatives and only published multi-version families', () => {
+test('local staging catalog has one representative per kind and preserves historical multi-version families', () => {
   assert.equal(catalog.schema_version, 1);
-  assert.deepEqual(Object.keys(catalog.representatives), ['cesium', 'trellis', 'person', 'pelican', 'baseball', 'pikachu']);
+  assert.deepEqual(Object.keys(catalog.representatives), ['cesium', 'trellis', 'person', 'pelican', 'baseball', 'pikachu', 'lamp', 'garden']);
+  for (const family of ['lamp','garden']) {
+    assert.equal(catalog.representatives[family],`sol-quality-${family}-reviewed`);
+    assert.deepEqual(catalog.families[family].variants.filter(item=>item.id.startsWith('sol-quality-')).map(item=>item.state),['baseline','preset-first','reviewed']);
+  }
   assert.equal(catalog.representatives.baseball, 'baseball');
   assert.equal(catalog.representatives.pikachu, 'pikachu-sol');
   assert.deepEqual(catalog.families.baseball.variants.map(item => item.id), ['baseball', 'baseball-geometry', 'baseball-projection', 'baseball-hires', 'baseball-retexture']);

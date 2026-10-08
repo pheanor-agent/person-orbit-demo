@@ -1,5 +1,5 @@
 (async () => {
-  const collectionCatalog = await fetch("./collection-catalog.json").then(response => { if (!response.ok) throw new Error("Collection catalog unavailable"); return response.json(); });
+  const collectionCatalog = await fetch("./collection-catalog.json?v=sol-quality-20261008").then(response => { if (!response.ok) throw new Error("Collection catalog unavailable"); return response.json(); });
   const isLab = document.body.dataset.page === "lab";
   const entryParams = new URLSearchParams(location.search);
   const entryId = entryParams.get("variant") || entryParams.get("model");
@@ -32278,7 +32278,8 @@ void main() {
       const size = bounds.getSize(new Vector3());
       const center = bounds.getCenter(new Vector3());
       const isPikachu = loadedPreset.startsWith("pikachu-");
-      const isLightScene = isPikachu || collectionCatalog.models[loadedPreset]?.family === "pelican";
+      const presentation = collectionCatalog.models[loadedPreset]?.presentation || {};
+      const isLightScene = isPikachu || collectionCatalog.models[loadedPreset]?.family === "pelican" || presentation.light_scene === true;
       if (isPikachu) applyPikachuStyle(gltf.scene);
       canvas.parentElement.classList.toggle("anime-scene", isPikachu);
       if (appliedBackground === "default" && !scene.background?.isTexture) {
@@ -32294,11 +32295,11 @@ void main() {
       modelRoot.scale.setScalar(fit);
       modelRoot.position.set(-center.x * fit, -bounds.min.y * fit, -center.z * fit);
       world.add(modelRoot);
-      target.set(0, Math.max(0.65, size.y * fit * (isLightScene ? 0.58 : 0.48)), 0);
-      defaultDistance = isLightScene ? 5.5 : 5.1;
+      target.set(0, Math.max(0.65, size.y * fit * (Number.isFinite(presentation.target_height_factor) ? presentation.target_height_factor : isLightScene ? 0.58 : 0.48)), 0);
+      defaultDistance = Number.isFinite(presentation.distance) ? presentation.distance : isLightScene ? 5.5 : 5.1;
       distance = defaultDistance;
-      yaw = collectionCatalog.models[loadedPreset]?.family === "pelican" ? Math.PI / 2 : 0;
-      pitch = 0.04;
+      yaw = Number.isFinite(presentation.yaw) ? presentation.yaw : collectionCatalog.models[loadedPreset]?.family === "pelican" ? Math.PI / 2 : 0;
+      pitch = Number.isFinite(presentation.pitch) ? presentation.pitch : 0.04;
       mixer = new AnimationMixer(gltf.scene);
       activeAnimations = gltf.animations || [];
       animationAction = activeAnimations.length ? mixer.clipAction(activeAnimations[0]).play() : null;
@@ -32574,8 +32575,9 @@ void main() {
     play.querySelector(".playIcon").textContent = autoRotate ? "\u2161" : "\u25B6";
   });
   document.querySelector("#reset").addEventListener("click", () => {
-    yaw = 0;
-    pitch = 0.04;
+    const presentation = collectionCatalog.models[loadedPreset]?.presentation || {};
+    yaw = Number.isFinite(presentation.yaw) ? presentation.yaw : 0;
+    pitch = Number.isFinite(presentation.pitch) ? presentation.pitch : 0.04;
     distance = defaultDistance;
     autoRotate = false;
     play.setAttribute("aria-pressed", "false");
