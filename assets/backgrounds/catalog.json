@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "license": "CC0",
+  "provider": "Poly Haven",
+  "output": {
+    "format": "JPEG",
+    "width": 4096,
+    "height": 2048,
+    "projection": "equirectangular 2:1",
+    "processing": "Official Poly Haven tonemapped JPG source resized to 4096x2048 with Pillow Lanczos, RGB JPEG quality 90, optimized/progressive, 4:4:4 chroma. Existing autumn_park and monks_forest are retained unchanged."
+  },
+  "license_url": "https://polyhaven.com/license",
+  "assets": {
+    "autumn_park": {
+      "file": "autumn_park.jpg",
+      "label_ko": "가을 공원",
+      "source_page": "https://polyhaven.com/a/autumn_park",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/autumn_park.jpg",
+      "sha256": "309260abac4ff2e8e3d9f113e6d62d652e1138d89e3a3e3d7f9a487a27a6dd50"
+    },
+    "monks_forest": {
+      "file": "monks_forest.jpg",
+      "label_ko": "숲길",
+      "source_page": "https://polyhaven.com/a/monks_forest",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/monks_forest.jpg",
+      "sha256": "6ab0dd7eac8ac9b2a265e352ba40bccb8ad34a2aa343137937fc274bf8c07533"
+    },
+    "urban_courtyard_02": {
+      "file": "urban_courtyard_02.jpg",
+      "label_ko": "도시 안뜰",
+      "source_page": "https://polyhaven.com/a/urban_courtyard_02",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/urban_courtyard_02.jpg",
+      "license": "CC0",
+      "source_dimensions": "8192x4096",
+      "processing_note": "official tonemapped JPG resized to 4096x2048",
+      "sha256": "ea0eac48efe1207821a3edeb29dfa1015a5416fb98fdf713d9cf2e24dbf652b8"
+    },
+    "machine_shop_02": {
+      "file": "machine_shop_02.jpg",
+      "label_ko": "기계 작업장",
+      "source_page": "https://polyhaven.com/a/machine_shop_02",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/machine_shop_02.jpg",
+      "license": "CC0",
+      "source_dimensions": "8192x4096",
+      "processing_note": "official tonemapped JPG resized to 4096x2048",
+      "sha256": "49014dc5dda8fb54daf9f3fc8eca8a41575bf0b106a0589f9fa47a23d5bcd180"
+    },
+    "stadium_01": {
+      "file": "stadium_01.jpg",
+      "label_ko": "경기장",
+      "source_page": "https://polyhaven.com/a/stadium_01",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/stadium_01.jpg",
+      "license": "CC0",
+      "source_dimensions": "8192x4096",
+      "processing_note": "official tonemapped JPG resized to 4096x2048. Poly Haven stadium panorama, not a baseball-specific venue.",
+      "sha256": "c239535bcbb7e37ad96f0d2cb615db02c795a55dff488fea86397ddb1f9f36bc"
+    },
+    "meadow_2": {
+      "file": "meadow_2.jpg",
+      "label_ko": "햇살 초원",
+      "source_page": "https://polyhaven.com/a/meadow_2",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/meadow_2.jpg",
+      "license": "CC0",
+      "source_dimensions": "8192x4096",
+      "processing_note": "official 8K tonemapped JPG is available; used directly and resized to 4096x2048 (no HDR tone mapping or substitute required).",
+      "sha256": "697072ea98471068421c70c56ada128c81ef68ce3a14f535b4e39026c21b0ce0"
+    },
+    "bell_park_pier": {
+      "file": "bell_park_pier.jpg",
+      "label_ko": "호숫가 부두",
+      "source_page": "https://polyhaven.com/a/bell_park_pier",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/bell_park_pier.jpg",
+      "license": "CC0",
+      "source_dimensions": "8192x4096",
+      "processing_note": "official tonemapped JPG resized to 4096x2048",
+      "sha256": "a3754b0f8bd6817ac4a12a26d617ce5f65437459caf30c487f1b065bba473e68"
+    }
+  }
+}

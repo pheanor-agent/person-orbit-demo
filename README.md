@@ -60,3 +60,11 @@ GPT-6.1 Sol과 GPT-6 Astra가 공식 외형 참고와 같은 16초 동작 구성
 ## 펠리컨 · 자전거
 
 [바로 열기](https://pheanor-agent.github.io/person-orbit-demo/?model=pelican) · [GLB 다운로드](https://pheanor-agent.github.io/person-orbit-demo/assets/pelican-bicycle.glb). 원래 WebGL 장면의 펠리컨과 자전거 형상을 Blender에서 animated GLB로 재구성했습니다. 4초 루프에 다리 IK, 페달 2회전, 바퀴 5회전을 베이크했으며 공통 애니메이션 재생·일시정지·타임라인·속도 제어를 사용합니다. 바닥·도로·카메라·조명은 GLB에 포함하지 않았습니다. 제작 소스와 한계는 JOB-4180 및 어셋 기록에 있습니다.
+
+## 펼친 모델 목록과 360° 배경
+
+모델은 항상 보이는 버튼 목록에서 선택합니다. 야구 타격 샘플 5종과 피카츄 2종은 접고 펼칠 수 있는 그룹으로 묶었습니다. `어셋에 맞춤 · 자동`이 기본 모드이며 Cesium Man→도시 안뜰, T형 기계→기계 작업장, 후드 여행자→숲길, 야구 5종→경기장, 피카츄 Sol/Astra→햇살 초원, 펠리컨→호숫가 부두를 적용합니다. 모델을 바꿀 때 자동 모드만 추천 배경으로 따라가며, 배경을 직접 선택하면 모델을 바꿔도 유지됩니다. `자동`을 누르면 현재 모델 추천으로 돌아옵니다. 단색 스튜디오도 수동 선택으로 제공됩니다.
+
+`?model=...&background=...` 조합은 모델/배경 링크 복사, 비교 링크, 브라우저 뒤로·앞으로 및 직접 재진입에 유지됩니다. `background`를 생략하거나 `background=auto`이면 자동 모드이며, `background=default`는 수동 단색입니다. 도시 안뜰·기계 작업장·숲길·경기장·햇살 초원·호숫가 부두 외에 가을 공원도 수동으로 선택할 수 있습니다. 파노라마 JPG는 Three.js equirectangular 매핑이며 카메라 드래그로 계속 회전할 수 있습니다. 야구에는 야구 전용 구장이 아닌 일반 경기장 파노라마를 사용합니다.
+
+Poly Haven의 CC0 원본은 공식 tonemapped JPG를 4096×2048로 축소해 `assets/backgrounds/`에 포함했습니다. 출처 URL, CC0, 가공 내역, 경로와 SHA-256은 [`assets/backgrounds/catalog.json`](assets/backgrounds/catalog.json)에 있습니다. meadow_2의 8K tonemapped JPG가 제공되어 HDR tone-map이나 대체 이미지 없이 사용했습니다. 상세 고지는 `THIRD-PARTY-NOTICES.md`를 확인하세요.
