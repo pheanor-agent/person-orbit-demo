@@ -1,0 +1,1572 @@
+{
+  "subject": "pikachu",
+  "model_sha256": "763dbbd624f72ff51ec293a40e21052369f78b874d24af8a8d89184a65bec8d9",
+  "source_sha256": "b5f91f4a216cde4212b56d7dbf4d3f15bb20a3ce7f10d6f3b8d3622e0afdcd85",
+  "source_sha_matches_manifest": true,
+  "glb": {
+    "bytes": 1060180,
+    "sha256": "763dbbd624f72ff51ec293a40e21052369f78b874d24af8a8d89184a65bec8d9",
+    "meshes": 33,
+    "triangles": 41503,
+    "materials": 8,
+    "images": 0,
+    "external_uris": []
+  },
+  "khronos_errors": 0,
+  "khronos_warnings": 0,
+  "actual_import_render": {
+    "camera_contract": {
+      "target": [
+        0.37115973234176636,
+        0.014905154705047607,
+        1.2547019720077515
+      ],
+      "scale": 3.7234185314178467,
+      "ground_z": 0.024215065270662306,
+      "bounds": {
+        "min": [
+          -0.7076647281646729,
+          -0.37003424763679504,
+          0.026215065270662308
+        ],
+        "max": [
+          1.4499841928482056,
+          0.39984455704689026,
+          2.4831888675689697
+        ]
+      },
+      "policy": "all evaluated animation frames; projection union of neutral and hero directions"
+    },
+    "neutral": "same fixed camera/light/profile/phase for old and final GLB",
+    "hero": "separate intended hero, not equal-condition quality proof",
+    "actual_gl_identity": {
+      "vendor": "Mesa",
+      "renderer": "llvmpipe (LLVM 20.1.2, 128 bits)",
+      "version": "4.5 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.2"
+    },
+    "views": [
+      "front",
+      "side",
+      "back",
+      "three-quarter"
+    ],
+    "closeups": [
+      "face",
+      "tail"
+    ],
+    "import_method": "actual bpy.ops.import_scene.gltf on final exported GLB",
+    "model_sha256": "763dbbd624f72ff51ec293a40e21052369f78b874d24af8a8d89184a65bec8d9",
+    "mesh_facts": [
+      {
+        "name": "Back brown stripe 0.79",
+        "vertices": 721,
+        "faces": 1200,
+        "materials": [
+          "Tail root and back stripes"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Back brown stripe 0.955",
+        "vertices": 721,
+        "faces": 1200,
+        "materials": [
+          "Tail root and back stripes"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Continuous cheek head and pear body",
+        "vertices": 11712,
+        "faces": 23228,
+        "materials": [
+          "Pikachu golden yellow"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Curved red cheek -1",
+        "vertices": 577,
+        "faces": 960,
+        "materials": [
+          "Red cheek"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Curved red cheek 1",
+        "vertices": 577,
+        "faces": 960,
+        "materials": [
+          "Red cheek"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Tapered curved ear -1",
+        "vertices": 980,
+        "faces": 1676,
+        "materials": [
+          "Pikachu golden yellow",
+          "Ear charcoal"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Tapered curved ear 1",
+        "vertices": 990,
+        "faces": 1676,
+        "materials": [
+          "Pikachu golden yellow",
+          "Ear charcoal"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Eye -1",
+        "vertices": 577,
+        "faces": 960,
+        "materials": [
+          "Warm black eyes"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Eye 1",
+        "vertices": 577,
+        "faces": 960,
+        "materials": [
+          "Warm black eyes"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Eye main gleam -1",
+        "vertices": 577,
+        "faces": 960,
+        "materials": [
+          "Eye gleam"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Eye main gleam 1",
+        "vertices": 577,
+        "faces": 960,
+        "materials": [
+          "Eye gleam"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Eye tiny gleam -1",
+        "vertices": 577,
+        "faces": 960,
+        "materials": [
+          "Eye gleam"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Eye tiny gleam 1",
+        "vertices": 577,
+        "faces": 960,
+        "materials": [
+          "Eye gleam"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Paw pointed digit -1 0",
+        "vertices": 91,
+        "faces": 92,
+        "materials": [
+          "Pikachu golden yellow"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Paw pointed digit -1 1",
+        "vertices": 91,
+        "faces": 92,
+        "materials": [
+          "Pikachu golden yellow"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Paw pointed digit -1 2",
+        "vertices": 91,
+        "faces": 92,
+        "materials": [
+          "Pikachu golden yellow"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Soft forearm -1",
+        "vertices": 232,
+        "faces": 316,
+        "materials": [
+          "Pikachu golden yellow"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Paw pointed digit 1 0",
+        "vertices": 91,
+        "faces": 92,
+        "materials": [
+          "Pikachu golden yellow"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Paw pointed digit 1 1",
+        "vertices": 91,
+        "faces": 92,
+        "materials": [
+          "Pikachu golden yellow"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Paw pointed digit 1 2",
+        "vertices": 91,
+        "faces": 92,
+        "materials": [
+          "Pikachu golden yellow"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Soft forearm 1",
+        "vertices": 232,
+        "faces": 316,
+        "materials": [
+          "Pikachu golden yellow"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Small triangular nose",
+        "vertices": 3,
+        "faces": 1,
+        "materials": [
+          "Warm black eyes"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Smile cavity",
+        "vertices": 10,
+        "faces": 8,
+        "materials": [
+          "Open smiling mouth"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Smile corner -1",
+        "vertices": 578,
+        "faces": 768,
+        "materials": [
+          "Warm black eyes"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Smile corner 1",
+        "vertices": 564,
+        "faces": 768,
+        "materials": [
+          "Warm black eyes"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Lightning tail / solid blade",
+        "vertices": 112,
+        "faces": 68,
+        "materials": [
+          "Pikachu golden yellow",
+          "Tail root and back stripes"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Tongue",
+        "vertices": 8,
+        "faces": 6,
+        "materials": [
+          "Pink tongue"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Pointed foot -1",
+        "vertices": 192,
+        "faces": 252,
+        "materials": [
+          "Pikachu golden yellow"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Pointed foot 1",
+        "vertices": 192,
+        "faces": 252,
+        "materials": [
+          "Pikachu golden yellow"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Toe crease -1 -1",
+        "vertices": 293,
+        "faces": 384,
+        "materials": [
+          "Tail root and back stripes"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Toe crease -1 1",
+        "vertices": 260,
+        "faces": 384,
+        "materials": [
+          "Tail root and back stripes"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Toe crease 1 -1",
+        "vertices": 273,
+        "faces": 384,
+        "materials": [
+          "Tail root and back stripes"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Toe crease 1 1",
+        "vertices": 278,
+        "faces": 384,
+        "materials": [
+          "Tail root and back stripes"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      }
+    ],
+    "blender": "4.0.2",
+    "review_status": "producer inspected; pending manager"
+  },
+  "images": [
+    {
+      "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/pikachu/previews/neutral/back.png",
+      "size": [
+        512,
+        512
+      ],
+      "pixel_std": 40.96605605453743,
+      "pass": true
+    },
+    {
+      "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/pikachu/previews/neutral/front.png",
+      "size": [
+        512,
+        512
+      ],
+      "pixel_std": 41.580098022042655,
+      "pass": true
+    },
+    {
+      "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/pikachu/previews/neutral/side.png",
+      "size": [
+        512,
+        512
+      ],
+      "pixel_std": 36.34090387431975,
+      "pass": true
+    },
+    {
+      "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/pikachu/previews/neutral/three-quarter.png",
+      "size": [
+        512,
+        512
+      ],
+      "pixel_std": 42.49642951886066,
+      "pass": true
+    },
+    {
+      "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/pikachu/previews/closeups/face.png",
+      "size": [
+        640,
+        640
+      ],
+      "pixel_std": 63.123000525446955,
+      "pass": true
+    },
+    {
+      "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/pikachu/previews/closeups/tail.png",
+      "size": [
+        640,
+        640
+      ],
+      "pixel_std": 47.29847562439496,
+      "pass": true
+    }
+  ],
+  "manager_acceptance": "pending",
+  "aesthetic_score": null,
+  "animation": {
+    "status": "pass",
+    "animations": [
+      {
+        "name": "Showcase_Loop",
+        "channels": 126
+      }
+    ],
+    "duration_s": 6.0,
+    "loop_max_world_matrix_error": 5.551115123125783e-17,
+    "morph_endpoint_error": 0.0,
+    "morph_channels": 6,
+    "moving_world_nodes": 39,
+    "sampled_world_positions": {
+      "0.0": {},
+      "0.75": {
+        "Back brown stripe 0.79": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Back brown stripe 0.955": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Continuous cheek head and pear body": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Curved red cheek -1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Curved red cheek 1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Tapered curved ear -1": [
+          -0.08111970346907194,
+          -0.014925707463173454,
+          1.8544618063387475e-09
+        ],
+        "Ear flexible -1": [
+          -0.3385062479815719,
+          1.6338193750269738,
+          -0.02489016540184863
+        ],
+        "Tapered curved ear 1": [
+          0.008777308250799143,
+          -0.0018183287009101434,
+          0.0
+        ],
+        "Ear flexible 1": [
+          0.3385062479815719,
+          1.6338193750269738,
+          -0.02489016540184863
+        ],
+        "Eye -1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Eye 1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Eye main gleam -1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Eye main gleam 1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Eye tiny gleam -1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Eye tiny gleam 1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Paw pointed digit -1 0": [
+          -0.06496235793782129,
+          -0.019932642768560438,
+          -9.272309031693737e-10
+        ],
+        "Paw pointed digit -1 1": [
+          -0.06496235793782129,
+          -0.019932642768560438,
+          -9.272309031693737e-10
+        ],
+        "Paw pointed digit -1 2": [
+          -0.06496235793782129,
+          -0.019932642768560438,
+          -9.272309031693737e-10
+        ],
+        "Soft forearm -1": [
+          -0.06496235793782129,
+          -0.019932642768560438,
+          -9.272309031693737e-10
+        ],
+        "Shoulder paw -1": [
+          -0.34348427624034095,
+          1.0173783111237071,
+          0.01493409683030883
+        ],
+        "Paw pointed digit 1 0": [
+          -2.967138890141996e-08,
+          0.0,
+          -1.8544618063387475e-09
+        ],
+        "Paw pointed digit 1 1": [
+          -2.967138890141996e-08,
+          0.0,
+          -1.8544618063387475e-09
+        ],
+        "Paw pointed digit 1 2": [
+          -2.967138890141996e-08,
+          0.0,
+          -1.8544618063387475e-09
+        ],
+        "Soft forearm 1": [
+          -2.967138890141996e-08,
+          0.0,
+          -1.8544618063387475e-09
+        ],
+        "Shoulder paw 1": [
+          0.34348427624034095,
+          1.0173783111237071,
+          0.01493409683030883
+        ],
+        "Small triangular nose": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Smile cavity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Smile corner -1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Smile corner 1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Lightning tail / solid blade": [
+          -0.021751284485698963,
+          0.015897237450877122,
+          2.967138890141996e-08
+        ],
+        "Tail secondary sway": [
+          0.30863798941479104,
+          0.45105441805907276,
+          -0.3185941052751069
+        ],
+        "Tongue": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Body breathing / hop": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "1.5": {
+        "Back brown stripe 0.79": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Back brown stripe 0.955": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Continuous cheek head and pear body": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Curved red cheek -1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Curved red cheek 1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Tapered curved ear -1": [
+          -0.056387941539430164,
+          -0.010986518225662989,
+          1.8347054986378453e-09
+        ],
+        "Ear flexible -1": [
+          -0.33490000838637357,
+          1.6430400216197967,
+          -0.02462500072456897
+        ],
+        "Tapered curved ear 1": [
+          0.06932691626300141,
+          -0.013213783552106673,
+          0.0
+        ],
+        "Ear flexible 1": [
+          0.33490000838637357,
+          1.6430400216197967,
+          -0.02462500072456897
+        ],
+        "Eye -1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Eye 1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Eye main gleam -1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Eye main gleam 1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Eye tiny gleam -1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Eye tiny gleam 1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Paw pointed digit -1 0": [
+          -0.09123371889821408,
+          -0.02711527283742088,
+          -1.8347054986378453e-09
+        ],
+        "Paw pointed digit -1 1": [
+          -0.09123371889821408,
+          -0.02711527283742088,
+          -1.8347054986378453e-09
+        ],
+        "Paw pointed digit -1 2": [
+          -0.09123371889821408,
+          -0.02711527283742088,
+          -1.8347054986378453e-09
+        ],
+        "Soft forearm -1": [
+          -0.09123371889821408,
+          -0.02711527283742088,
+          -1.8347054986378453e-09
+        ],
+        "Shoulder paw -1": [
+          -0.33982500376105307,
+          1.0231200020360944,
+          0.014774998049624233
+        ],
+        "Paw pointed digit 1 0": [
+          0.5237456675395974,
+          -0.04096946543930091,
+          -9.173527493189226e-10
+        ],
+        "Paw pointed digit 1 1": [
+          0.5237456675395974,
+          -0.04096946543930091,
+          -9.173527493189226e-10
+        ],
+        "Paw pointed digit 1 2": [
+          0.5237456675395974,
+          -0.04096946543930091,
+          -9.173527493189226e-10
+        ],
+        "Soft forearm 1": [
+          0.5237456675395974,
+          -0.04096946543930091,
+          -9.173527493189226e-10
+        ],
+        "Shoulder paw 1": [
+          0.33982500376105307,
+          1.0231200020360944,
+          0.014774998049624233
+        ],
+        "Small triangular nose": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Smile cavity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Smile corner -1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Smile corner 1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Lightning tail / solid blade": [
+          -0.025054096962240036,
+          0.018775727041013934,
+          0.0
+        ],
+        "Tail secondary sway": [
+          0.3053500067830086,
+          0.45359999527931194,
+          -0.3151999975323676
+        ],
+        "Tongue": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Body breathing / hop": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "2.25": {
+        "Back brown stripe 0.79": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Back brown stripe 0.955": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Continuous cheek head and pear body": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Curved red cheek -1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Curved red cheek 1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Tapered curved ear -1": [
+          0.00039906843587944607,
+          8.68004150182955e-05,
+          7.259796340475244e-10
+        ],
+        "Ear flexible -1": [
+          -0.3312937107128011,
+          1.652260547375306,
+          -0.024359832417390925
+        ],
+        "Tapered curved ear 1": [
+          0.08846185954522237,
+          -0.01655001055158767,
+          7.259796340475244e-10
+        ],
+        "Ear flexible 1": [
+          0.3312937107128011,
+          1.652260547375306,
+          -0.024359832417390925
+        ],
+        "Eye -1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Eye 1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Eye main gleam -1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Eye main gleam 1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Eye tiny gleam -1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Eye tiny gleam 1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Paw pointed digit -1 0": [
+          -0.06357808143773569,
+          -0.02015787426272775,
+          -7.259800573200526e-11
+        ],
+        "Paw pointed digit -1 1": [
+          -0.06357808143773569,
+          -0.02015787426272775,
+          -7.259800573200526e-11
+        ],
+        "Paw pointed digit -1 2": [
+          -0.06357808143773569,
+          -0.02015787426272775,
+          -7.259800573200526e-11
+        ],
+        "Soft forearm -1": [
+          -0.06357808143773569,
+          -0.02015787426272775,
+          -7.259800573200526e-11
+        ],
+        "Shoulder paw -1": [
+          -0.3361656732033911,
+          1.0288615721111682,
+          0.014615899268939636
+        ],
+        "Paw pointed digit 1 0": [
+          0.8331187470928225,
+          0.07304343118633683,
+          8.348764804488873e-10
+        ],
+        "Paw pointed digit 1 1": [
+          0.8331187470928225,
+          0.07304343118633683,
+          8.348764804488873e-10
+        ],
+        "Paw pointed digit 1 2": [
+          0.8331187470928225,
+          0.07304343118633683,
+          8.348764804488873e-10
+        ],
+        "Soft forearm 1": [
+          0.8331187470928225,
+          0.07304343118633683,
+          8.348764804488873e-10
+        ],
+        "Shoulder paw 1": [
+          0.3361656732033911,
+          1.0288615721111682,
+          0.014615899268939636
+        ],
+        "Small triangular nose": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Smile cavity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Smile corner -1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Smile corner 1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Lightning tail / solid blade": [
+          -0.017817369492046764,
+          0.013340462608100567,
+          -3.717015861770534e-08
+        ],
+        "Tail secondary sway": [
+          0.3020619648084484,
+          0.4561455724995511,
+          -0.3118058897896283
+        ],
+        "Tongue": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Body breathing / hop": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "3.0": {
+        "Back brown stripe 0.79": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Back brown stripe 0.955": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Continuous cheek head and pear body": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Curved red cheek -1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Curved red cheek 1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Tapered curved ear -1": [
+          -1.850128533709139e-08,
+          -1.2111664204894623e-07,
+          2.890825398504937e-09
+        ],
+        "Ear flexible -1": [
+          -0.329800042104722,
+          1.6560799268913229,
+          -0.024250001076608907
+        ],
+        "Tapered curved ear 1": [
+          1.850128533709139e-08,
+          -1.2111664204894623e-07,
+          2.890825398504937e-09
+        ],
+        "Ear flexible 1": [
+          0.329800042104722,
+          1.6560799268913229,
+          -0.024250001076608907
+        ],
+        "Eye -1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Eye 1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Eye main gleam -1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Eye main gleam 1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Eye tiny gleam -1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Eye tiny gleam 1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Paw pointed digit -1 0": [
+          -1.7923120820828586e-08,
+          0.0,
+          -8.311123594895165e-10
+        ],
+        "Paw pointed digit -1 1": [
+          -1.7923120820828586e-08,
+          0.0,
+          -8.311123594895165e-10
+        ],
+        "Paw pointed digit -1 2": [
+          -1.7923120820828586e-08,
+          0.0,
+          -8.311123594895165e-10
+        ],
+        "Soft forearm -1": [
+          -1.7923120820828586e-08,
+          0.0,
+          -8.311123594895165e-10
+        ],
+        "Shoulder paw -1": [
+          -0.3346500376224526,
+          1.0312400183773036,
+          0.014550001910701438
+        ],
+        "Paw pointed digit 1 0": [
+          0.05995906098092685,
+          -0.019254492458302686,
+          7.227067208570581e-11
+        ],
+        "Paw pointed digit 1 1": [
+          0.05995906098092685,
+          -0.019254492458302686,
+          7.227067208570581e-11
+        ],
+        "Paw pointed digit 1 2": [
+          0.05995906098092685,
+          -0.019254492458302686,
+          7.227067208570581e-11
+        ],
+        "Soft forearm 1": [
+          0.05995906098092685,
+          -0.019254492458302686,
+          7.227067208570581e-11
+        ],
+        "Shoulder paw 1": [
+          0.3346500376224526,
+          1.0312400183773036,
+          0.014550001910701438
+        ],
+        "Small triangular nose": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Smile cavity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Smile corner -1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Smile corner 1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Lightning tail / solid blade": [
+          -0.013325402278980825,
+          0.009936074482348234,
+          8.094310166573138e-09
+        ],
+        "Tail secondary sway": [
+          0.300700040090085,
+          0.4571999722003923,
+          -0.31040003112554615
+        ],
+        "Tongue": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Body breathing / hop": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "contact_supported": false,
+    "contact_marker_pairs": 0,
+    "contact_max_distance_m": null,
+    "contact_evidence": [],
+    "support_scope": "GLB hierarchy/TRS/morph and construction endpoint markers, NOT surface penetration or naturalness",
+    "unsupported_interpolation": []
+  },
+  "media": {
+    "status": "pass",
+    "images": [
+      {
+        "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/pikachu/previews/hero.png",
+        "size": [
+          768,
+          768
+        ],
+        "std": 49.93960639353175,
+        "pass": true
+      },
+      {
+        "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/pikachu/previews/neutral/front.png",
+        "size": [
+          512,
+          512
+        ],
+        "std": 41.580098022042655,
+        "pass": true
+      },
+      {
+        "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/pikachu/previews/neutral/side.png",
+        "size": [
+          512,
+          512
+        ],
+        "std": 36.34090387431975,
+        "pass": true
+      },
+      {
+        "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/pikachu/previews/neutral/three-quarter.png",
+        "size": [
+          512,
+          512
+        ],
+        "std": 42.49642951886066,
+        "pass": true
+      },
+      {
+        "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/pikachu/previews/neutral/back.png",
+        "size": [
+          512,
+          512
+        ],
+        "std": 40.96605605453743,
+        "pass": true
+      },
+      {
+        "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/pikachu/previews/phases/001.png",
+        "size": [
+          512,
+          512
+        ],
+        "std": 42.834294741708426,
+        "pass": true
+      },
+      {
+        "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/pikachu/previews/phases/055.png",
+        "size": [
+          512,
+          512
+        ],
+        "std": 42.70952169668006,
+        "pass": true
+      },
+      {
+        "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/pikachu/previews/phases/037.png",
+        "size": [
+          512,
+          512
+        ],
+        "std": 42.579027059270594,
+        "pass": true
+      },
+      {
+        "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/pikachu/previews/phases/019.png",
+        "size": [
+          512,
+          512
+        ],
+        "std": 42.75434028542944,
+        "pass": true
+      }
+    ],
+    "video": {
+      "codec": "h264",
+      "size": [
+        384,
+        384
+      ],
+      "fps": "12/1",
+      "decoded_frames": 72,
+      "duration_s": 6.0,
+      "phase_pixel_mae_from_first": [
+        2.3854686595775463,
+        2.1470743815104165,
+        2.1929524739583335
+      ],
+      "status": "pass"
+    },
+    "controls": {
+      "depth.png": {
+        "size": [
+          512,
+          512
+        ],
+        "unique_colors": 189,
+        "std": 78.26394177936278
+      },
+      "object-mask.png": {
+        "size": [
+          512,
+          512
+        ],
+        "unique_colors": 28,
+        "std": 2.3431761833405838
+      },
+      "outline.png": {
+        "size": [
+          512,
+          512
+        ],
+        "unique_colors": 2,
+        "std": 21.97801087193251
+      },
+      "silhouette.png": {
+        "size": [
+          512,
+          512
+        ],
+        "unique_colors": 2,
+        "std": 87.62689446086863
+      },
+      "mask_foreground_fraction": 0.13679885864257812,
+      "mask_touches_image_border": false
+    },
+    "aesthetic_inference": "none; manager actual-image review pending"
+  },
+  "grounding": {
+    "status": "pass",
+    "support_plane_y": 0.026215065270662308,
+    "grounded_frame_max_error": 6.901618557902944e-09,
+    "horizontal_foot_slide_max": 0.0,
+    "airborne_interval_fraction": [
+      0.58,
+      0.76
+    ],
+    "max_hop_height": 0.11959429830312729,
+    "samples": [
+      {
+        "time": 0.0,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 0.08333333333333333,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 0.16666666666666666,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 0.25,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 0.3333333333333333,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 0.41666666666666663,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 0.5,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 0.5833333333333333,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 0.6666666666666666,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 0.75,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 0.8333333333333333,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 0.9166666666666666,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 1.0,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 1.0833333333333333,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 1.1666666666666665,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 1.25,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 1.3333333333333333,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 1.4166666666666665,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 1.5,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 1.5833333333333333,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 1.6666666666666665,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 1.75,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 1.8333333333333333,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 1.9166666666666665,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 2.0,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 2.083333333333333,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 2.1666666666666665,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 2.25,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 2.333333333333333,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 2.4166666666666665,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 2.5,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 2.583333333333333,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 2.6666666666666665,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 2.75,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 2.833333333333333,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 2.9166666666666665,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 3.0,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 3.083333333333333,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 3.1666666666666665,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 3.25,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 3.333333333333333,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 3.4166666666666665,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 3.5,
+        "min_y": 0.026620763819664717
+      },
+      {
+        "time": 3.583333333333333,
+        "min_y": 0.0367345856821871
+      },
+      {
+        "time": 3.6666666666666665,
+        "min_y": 0.05825243328299747
+      },
+      {
+        "time": 3.75,
+        "min_y": 0.0862150639295578
+      },
+      {
+        "time": 3.833333333333333,
+        "min_y": 0.11417769830140742
+      },
+      {
+        "time": 3.9166666666666665,
+        "min_y": 0.135695544970897
+      },
+      {
+        "time": 4.0,
+        "min_y": 0.1458093635737896
+      },
+      {
+        "time": 4.083333333333333,
+        "min_y": 0.1421880977380578
+      },
+      {
+        "time": 4.166666666666666,
+        "min_y": 0.12566629754561476
+      },
+      {
+        "time": 4.25,
+        "min_y": 0.10005201771855354
+      },
+      {
+        "time": 4.333333333333333,
+        "min_y": 0.07124865333483588
+      },
+      {
+        "time": 4.416666666666666,
+        "min_y": 0.04589456236638193
+      },
+      {
+        "time": 4.5,
+        "min_y": 0.029833507956936955
+      },
+      {
+        "time": 4.583333333333333,
+        "min_y": 0.026215072172280866
+      },
+      {
+        "time": 4.666666666666666,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 4.75,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 4.833333333333333,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 4.916666666666666,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 5.0,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 5.083333333333333,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 5.166666666666666,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 5.25,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 5.333333333333333,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 5.416666666666666,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 5.5,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 5.583333333333333,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 5.666666666666666,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 5.75,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 5.833333333333333,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 5.916666666666666,
+        "min_y": 0.026215065270662308
+      },
+      {
+        "time": 6.0,
+        "min_y": 0.026215065270662308
+      }
+    ],
+    "scope": "actual final GLB foot mesh vertices/world hierarchy; explicit airborne hop excepted, not construction empty markers"
+  },
+  "source_has_imported_model": false,
+  "status": "pass"
+}

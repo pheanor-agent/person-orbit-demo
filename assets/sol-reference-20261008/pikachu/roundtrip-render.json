@@ -1,0 +1,359 @@
+{
+  "camera_contract": {
+    "target": [
+      0.37115973234176636,
+      0.014905154705047607,
+      1.2547019720077515
+    ],
+    "scale": 3.7234185314178467,
+    "ground_z": 0.024215065270662306,
+    "bounds": {
+      "min": [
+        -0.7076647281646729,
+        -0.37003424763679504,
+        0.026215065270662308
+      ],
+      "max": [
+        1.4499841928482056,
+        0.39984455704689026,
+        2.4831888675689697
+      ]
+    },
+    "policy": "all evaluated animation frames; projection union of neutral and hero directions"
+  },
+  "neutral": "same fixed camera/light/profile/phase for old and final GLB",
+  "hero": "separate intended hero, not equal-condition quality proof",
+  "actual_gl_identity": {
+    "vendor": "Mesa",
+    "renderer": "llvmpipe (LLVM 20.1.2, 128 bits)",
+    "version": "4.5 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.2"
+  },
+  "views": [
+    "front",
+    "side",
+    "back",
+    "three-quarter"
+  ],
+  "closeups": [
+    "face",
+    "tail"
+  ],
+  "import_method": "actual bpy.ops.import_scene.gltf on final exported GLB",
+  "model_sha256": "763dbbd624f72ff51ec293a40e21052369f78b874d24af8a8d89184a65bec8d9",
+  "mesh_facts": [
+    {
+      "name": "Back brown stripe 0.79",
+      "vertices": 721,
+      "faces": 1200,
+      "materials": [
+        "Tail root and back stripes"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Back brown stripe 0.955",
+      "vertices": 721,
+      "faces": 1200,
+      "materials": [
+        "Tail root and back stripes"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Continuous cheek head and pear body",
+      "vertices": 11712,
+      "faces": 23228,
+      "materials": [
+        "Pikachu golden yellow"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Curved red cheek -1",
+      "vertices": 577,
+      "faces": 960,
+      "materials": [
+        "Red cheek"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Curved red cheek 1",
+      "vertices": 577,
+      "faces": 960,
+      "materials": [
+        "Red cheek"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Tapered curved ear -1",
+      "vertices": 980,
+      "faces": 1676,
+      "materials": [
+        "Pikachu golden yellow",
+        "Ear charcoal"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Tapered curved ear 1",
+      "vertices": 990,
+      "faces": 1676,
+      "materials": [
+        "Pikachu golden yellow",
+        "Ear charcoal"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Eye -1",
+      "vertices": 577,
+      "faces": 960,
+      "materials": [
+        "Warm black eyes"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Eye 1",
+      "vertices": 577,
+      "faces": 960,
+      "materials": [
+        "Warm black eyes"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Eye main gleam -1",
+      "vertices": 577,
+      "faces": 960,
+      "materials": [
+        "Eye gleam"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Eye main gleam 1",
+      "vertices": 577,
+      "faces": 960,
+      "materials": [
+        "Eye gleam"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Eye tiny gleam -1",
+      "vertices": 577,
+      "faces": 960,
+      "materials": [
+        "Eye gleam"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Eye tiny gleam 1",
+      "vertices": 577,
+      "faces": 960,
+      "materials": [
+        "Eye gleam"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Paw pointed digit -1 0",
+      "vertices": 91,
+      "faces": 92,
+      "materials": [
+        "Pikachu golden yellow"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Paw pointed digit -1 1",
+      "vertices": 91,
+      "faces": 92,
+      "materials": [
+        "Pikachu golden yellow"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Paw pointed digit -1 2",
+      "vertices": 91,
+      "faces": 92,
+      "materials": [
+        "Pikachu golden yellow"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Soft forearm -1",
+      "vertices": 232,
+      "faces": 316,
+      "materials": [
+        "Pikachu golden yellow"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Paw pointed digit 1 0",
+      "vertices": 91,
+      "faces": 92,
+      "materials": [
+        "Pikachu golden yellow"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Paw pointed digit 1 1",
+      "vertices": 91,
+      "faces": 92,
+      "materials": [
+        "Pikachu golden yellow"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Paw pointed digit 1 2",
+      "vertices": 91,
+      "faces": 92,
+      "materials": [
+        "Pikachu golden yellow"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Soft forearm 1",
+      "vertices": 232,
+      "faces": 316,
+      "materials": [
+        "Pikachu golden yellow"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Small triangular nose",
+      "vertices": 3,
+      "faces": 1,
+      "materials": [
+        "Warm black eyes"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Smile cavity",
+      "vertices": 10,
+      "faces": 8,
+      "materials": [
+        "Open smiling mouth"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Smile corner -1",
+      "vertices": 578,
+      "faces": 768,
+      "materials": [
+        "Warm black eyes"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Smile corner 1",
+      "vertices": 564,
+      "faces": 768,
+      "materials": [
+        "Warm black eyes"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Lightning tail / solid blade",
+      "vertices": 112,
+      "faces": 68,
+      "materials": [
+        "Pikachu golden yellow",
+        "Tail root and back stripes"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Tongue",
+      "vertices": 8,
+      "faces": 6,
+      "materials": [
+        "Pink tongue"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Pointed foot -1",
+      "vertices": 192,
+      "faces": 252,
+      "materials": [
+        "Pikachu golden yellow"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Pointed foot 1",
+      "vertices": 192,
+      "faces": 252,
+      "materials": [
+        "Pikachu golden yellow"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Toe crease -1 -1",
+      "vertices": 293,
+      "faces": 384,
+      "materials": [
+        "Tail root and back stripes"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Toe crease -1 1",
+      "vertices": 260,
+      "faces": 384,
+      "materials": [
+        "Tail root and back stripes"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Toe crease 1 -1",
+      "vertices": 273,
+      "faces": 384,
+      "materials": [
+        "Tail root and back stripes"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Toe crease 1 1",
+      "vertices": 278,
+      "faces": 384,
+      "materials": [
+        "Tail root and back stripes"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    }
+  ],
+  "blender": "4.0.2",
+  "review_status": "producer inspected; pending manager"
+}

@@ -1,0 +1,18 @@
+import playwright from '../../experiments/pelican-comparison/node_modules/playwright/index.js';
+import {readFileSync,writeFileSync,existsSync} from 'node:fs';
+const out='/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/browser';
+const base='http://127.0.0.1:8877';
+const cases=[['pikachu-sol',`${base}/?model=pikachu-sol&background=default`,null,16],['pikachu-astra',`${base}/?model=pikachu-astra&background=default`,null,16],['pikachu-sol-reference-20261008',`${base}/lab.html?family=pikachu&variant=pikachu-sol-reference-20261008&background=auto`,'햇살 초원',6],['sol-baseball-reference-20261008',`${base}/lab.html?family=baseball&variant=sol-baseball-reference-20261008&background=auto`,'경기장',0],['sol-traveler-reference-20261008',`${base}/lab.html?family=person&variant=sol-traveler-reference-20261008&background=auto`,'숲길',0],['sol-machine-reference-20261008',`${base}/lab.html?family=trellis&variant=sol-machine-reference-20261008&background=auto`,'기계 작업장',0]];
+const rows=[];
+if(process.argv.includes('--resume'))for(const [id]of cases){const f=`${out}/${id}-regression.json`;if(existsSync(f)){const r=JSON.parse(readFileSync(f));if(r.status==='pass')rows.push(r);}}
+let server,browser;
+try{
+for(const [id,url,background,duration]of cases){if(rows.some(r=>r.id===id))continue;
+ server=await playwright.chromium.launchServer({executablePath:'/usr/bin/google-chrome',headless:true,args:['--no-sandbox','--enable-webgl','--use-gl=angle','--use-angle=swiftshader','--disable-gpu-sandbox']});browser=await playwright.chromium.connect(server.wsEndpoint());const page=await browser.newPage({viewport:{width:640,height:480}});const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});await page.goto(url);await page.waitForFunction(id=>window.__orbitTest?.loadedPreset===id&&document.querySelector('#status')?.textContent.includes('불러옴'),id,{timeout:30000});
+ if(background)await page.waitForFunction(label=>document.querySelector('#backgroundStatus').textContent.includes(label+' 적용됨'),background,{timeout:30000});
+ const data=await page.evaluate(()=>({url:location.href,clips:window.__orbitTest.activeAnimations,duration:Number(document.querySelector('#motionTimeline').max),background:document.querySelector('#backgroundStatus').textContent}));if(duration&&(data.clips!==1||Math.abs(data.duration-duration)>.01))throw Error('Historical clip regression '+id);
+ if(duration)for(const t of [0,4,8,12].map(x=>x*duration/16)){await page.evaluate(t=>{const x=document.querySelector('#motionTimeline');x.value=t;x.dispatchEvent(new Event('input',{bubbles:true}));},t);await page.waitForTimeout(80);}
+ await page.screenshot({path:`${out}/${id}-regression.png`});const row={id,status:errors.length?'fail':'pass',data,errors,scope:background?'new ID auto family background actual image load':'historical ?model URL retained; both animated 16s variants compile corrected static/skinned contour shader'};rows.push(row);writeFileSync(`${out}/${id}-regression.json`,JSON.stringify(row,null,2));console.log(JSON.stringify({id,status:row.status,background:data.background,errors}));await browser.close();await server.close();
+}
+const summary={status:rows.length===cases.length&&rows.every(r=>r.status==='pass')?'pass':'fail',count:rows.length,rows};writeFileSync(out+'/regression-summary.json',JSON.stringify(summary,null,2));if(summary.status!=='pass')process.exitCode=1;
+}catch(e){writeFileSync(out+'/regression-failure.json',JSON.stringify({status:'fail',error:e.stack,completed:rows},null,2));console.error(e);process.exitCode=1;}finally{await browser?.close().catch(()=>{});await server?.close().catch(()=>{});}

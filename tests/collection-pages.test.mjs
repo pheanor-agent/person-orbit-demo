@@ -27,17 +27,22 @@ test('lab page is separate and links to representative collection', () => {
   assert.match(viewer, /collection-catalog\.json/);
 });
 
-test('local staging catalog has one representative per kind and preserves historical multi-version families', () => {
+test('reviewed catalog has one representative per kind and preserves historical multi-version families', () => {
   assert.equal(catalog.schema_version, 1);
   assert.deepEqual(Object.keys(catalog.representatives), ['cesium', 'trellis', 'person', 'pelican', 'baseball', 'pikachu', 'lamp', 'garden']);
   for (const family of ['lamp','garden']) {
     assert.equal(catalog.representatives[family],`sol-quality-${family}-reviewed`);
     assert.deepEqual(catalog.families[family].variants.filter(item=>item.id.startsWith('sol-quality-')).map(item=>item.state),['baseline','preset-first','reviewed']);
   }
-  assert.equal(catalog.representatives.baseball, 'baseball');
-  assert.equal(catalog.representatives.pikachu, 'pikachu-sol');
-  assert.deepEqual(catalog.families.baseball.variants.map(item => item.id), ['baseball', 'baseball-geometry', 'baseball-projection', 'baseball-hires', 'baseball-retexture']);
-  assert.deepEqual(catalog.families.pikachu.variants.map(item => item.id), ['pikachu-sol', 'pikachu-astra']);
+  assert.equal(catalog.representatives.baseball, 'sol-baseball-reference-20261008');
+  assert.equal(catalog.representatives.pikachu, 'pikachu-sol-reference-20261008');
+  assert.deepEqual(catalog.families.baseball.variants.map(item => item.id), ['baseball', 'baseball-geometry', 'baseball-projection', 'baseball-hires', 'baseball-retexture', 'sol-baseball-reference-20261008']);
+  assert.deepEqual(catalog.families.pikachu.variants.map(item => item.id), ['pikachu-sol', 'pikachu-astra', 'pikachu-sol-reference-20261008']);
+  for (const [family, original, added] of [['person','person','sol-traveler-reference-20261008'],['trellis','trellis','sol-machine-reference-20261008']]) {
+    assert.equal(catalog.representatives[family], original);
+    assert.deepEqual(catalog.families[family].variants.map(item => item.id), [original, added]);
+    assert.equal(catalog.models[added].state, 'manager-reviewed');
+  }
   for (const family of Object.values(catalog.families)) {
     for (const variant of family.variants) assert.ok(catalog.models[variant.model], `Missing model: ${variant.model}`);
   }

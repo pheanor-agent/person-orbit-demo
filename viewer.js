@@ -1,5 +1,5 @@
 (async () => {
-  const collectionCatalog = await fetch("./collection-catalog.json?v=sol-quality-20261008").then(response => { if (!response.ok) throw new Error("Collection catalog unavailable"); return response.json(); });
+  const collectionCatalog = await fetch("./collection-catalog.json?v=sol-reference-reviewed-20261009").then(response => { if (!response.ok) throw new Error("Collection catalog unavailable"); return response.json(); });
   const isLab = document.body.dataset.page === "lab";
   const entryParams = new URLSearchParams(location.search);
   const entryId = entryParams.get("variant") || entryParams.get("model");
@@ -32143,9 +32143,9 @@ void main() {
     motionTimeline.max = String(clipDuration || 1);
     motionTimeline.value = String(time);
     document.querySelector("#motionTime").textContent = `${time.toFixed(1)} / ${clipDuration.toFixed(1)}초`;
-    document.querySelector("#motionPhase").textContent = loadedPreset.startsWith("pikachu-")
+    document.querySelector("#motionPhase").textContent = collectionCatalog.models[loadedPreset]?.motion_label || (loadedPreset.startsWith("pikachu-")
       ? (time < 3 ? "주변 탐색" : time < 7 ? "네 걸음" : time < 10 ? "점프 · 착지" : time < 13 ? "손 흔들기" : "자리로 복귀")
-      : "반복 동작";
+      : "반복 동작");
   }
   motionPlay.addEventListener("click", () => { animationPlaying = !animationPlaying; updateMotionUI(); });
   document.querySelector("#motionRestart").addEventListener("click", () => {
@@ -32247,9 +32247,15 @@ void main() {
       contour.material = new MeshBasicMaterial({ color: "#392d25", side: BackSide, toneMapped: false, fog: false });
       contour.material.onBeforeCompile = (shader) => {
         shader.vertexShader = shader.vertexShader.replace("#include <skinning_vertex>",
-          "#include <skinning_vertex>\ntransformed += normalize( objectNormal ) * 0.004;");
+          `#include <skinning_vertex>
+           vec3 contourNormal = normal;
+           #ifdef USE_SKINNING
+             mat4 contourSkin = boneMatX * skinWeight.x + boneMatY * skinWeight.y + boneMatZ * skinWeight.z + boneMatW * skinWeight.w;
+             contourNormal = ( bindMatrixInverse * contourSkin * bindMatrix * vec4( normal, 0.0 ) ).xyz;
+           #endif
+           transformed += normalize( contourNormal ) * 0.004;`);
       };
-      contour.material.customProgramCacheKey = () => "pikachu-anime-contour-v1";
+      contour.material.customProgramCacheKey = () => "pikachu-anime-contour-v2-skin-and-static";
       contour.castShadow = false;
       contour.receiveShadow = false;
       object.parent.add(contour);
@@ -32299,6 +32305,7 @@ void main() {
       defaultDistance = Number.isFinite(presentation.distance) ? presentation.distance : isLightScene ? 5.5 : 5.1;
       distance = defaultDistance;
       yaw = Number.isFinite(presentation.yaw) ? presentation.yaw : collectionCatalog.models[loadedPreset]?.family === "pelican" ? Math.PI / 2 : 0;
+      document.querySelectorAll(".view-btn").forEach(button => button.setAttribute("aria-pressed", "false"));
       pitch = Number.isFinite(presentation.pitch) ? presentation.pitch : 0.04;
       mixer = new AnimationMixer(gltf.scene);
       activeAnimations = gltf.animations || [];
@@ -32528,7 +32535,8 @@ void main() {
       return;
     }
     const modelFamily = collectionCatalog.models[loadedPreset]?.family;
-    const effectiveBackground = resolved === "auto" ? automaticBackgrounds[loadedPreset] || (modelFamily === "pelican" ? "small-rural-road" : "urban-courtyard") : resolved;
+    const familyBackground = {baseball: "stadium", pikachu: "meadow", person: "monks-forest", trellis: "machine-shop", pelican: "small-rural-road"}[modelFamily];
+    const effectiveBackground = resolved === "auto" ? automaticBackgrounds[loadedPreset] || familyBackground || "urban-courtyard" : resolved;
     const preset = backgroundPresets[effectiveBackground];
     backgroundStatus.textContent = `${resolved === "auto" ? "어셋에 맞춤 · 자동" : "수동 선택"} · ${preset.label} 360° 배경을 불러오는 중…`;
     new TextureLoader().load(preset.asset, texture => {

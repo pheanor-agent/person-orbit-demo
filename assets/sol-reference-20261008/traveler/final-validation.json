@@ -1,0 +1,635 @@
+{
+  "subject": "traveler",
+  "model_sha256": "5771786ba861ea5ee4aabf38ee659fdc4c92a41ca8ddcfcfb509ef3293cab9f6",
+  "source_sha256": "1dce4b4420c0327bff9796029b0653897362f8085fd66910ca2de21fb1512254",
+  "source_sha_matches_manifest": true,
+  "glb": {
+    "bytes": 2993708,
+    "sha256": "5771786ba861ea5ee4aabf38ee659fdc4c92a41ca8ddcfcfb509ef3293cab9f6",
+    "meshes": 34,
+    "triangles": 60151,
+    "materials": 6,
+    "images": 2,
+    "external_uris": []
+  },
+  "khronos_errors": 0,
+  "khronos_warnings": 0,
+  "actual_import_render": {
+    "camera_contract": {
+      "target": [
+        0.0007678866386413574,
+        0.0002586096525192261,
+        -3.933906555175781e-05
+      ],
+      "scale": 1.4202155876159668,
+      "ground_z": -0.503306414604187,
+      "bounds": {
+        "min": [
+          -0.20233552157878876,
+          -0.22114093601703644,
+          -0.501306414604187
+        ],
+        "max": [
+          0.20387129485607147,
+          0.2216581553220749,
+          0.5012277364730835
+        ]
+      },
+      "policy": "union of source and final dimensions; same fixed neutral/close-up framing"
+    },
+    "neutral": "same fixed camera/light/profile/phase for old and final GLB",
+    "hero": "separate intended hero, not equal-condition quality proof",
+    "actual_gl_identity": {
+      "vendor": "Mesa",
+      "renderer": "llvmpipe (LLVM 20.1.2, 128 bits)",
+      "version": "4.5 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.2"
+    },
+    "views": [
+      "front",
+      "side",
+      "back",
+      "three-quarter"
+    ],
+    "closeups": [
+      "head",
+      "equipment",
+      "hands"
+    ],
+    "import_method": "actual bpy.ops.import_scene.gltf on final exported GLB",
+    "model_sha256": "5771786ba861ea5ee4aabf38ee659fdc4c92a41ca8ddcfcfb509ef3293cab9f6",
+    "mesh_facts": [
+      {
+        "name": "Bag brass closure 0.113",
+        "vertices": 338,
+        "faces": 380,
+        "materials": [
+          "Traveler old brass hardware"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Bag brass closure 0.142",
+        "vertices": 338,
+        "faces": 380,
+        "materials": [
+          "Traveler old brass hardware"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Bag flap short stitching segment 0",
+        "vertices": 432,
+        "faces": 396,
+        "materials": [
+          "Leather seam thread"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Belt brass buckle left",
+        "vertices": 600,
+        "faces": 300,
+        "materials": [
+          "Traveler old brass hardware"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Belt brass buckle lower",
+        "vertices": 600,
+        "faces": 300,
+        "materials": [
+          "Traveler old brass hardware"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Belt brass buckle right",
+        "vertices": 600,
+        "faces": 300,
+        "materials": [
+          "Traveler old brass hardware"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Belt brass buckle tongue",
+        "vertices": 600,
+        "faces": 300,
+        "materials": [
+          "Traveler old brass hardware"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Belt brass buckle upper",
+        "vertices": 600,
+        "faces": 300,
+        "materials": [
+          "Traveler old brass hardware"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Belt saddle stitch -0.061 segment 0",
+        "vertices": 224,
+        "faces": 204,
+        "materials": [
+          "Leather seam thread"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Belt saddle stitch -0.08 segment 0",
+        "vertices": 174,
+        "faces": 140,
+        "materials": [
+          "Leather seam thread"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Belt saddle stitch -0.08 segment 1",
+        "vertices": 80,
+        "faces": 60,
+        "materials": [
+          "Leather seam thread"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Belt saddle stitch 0.0 segment 0",
+        "vertices": 240,
+        "faces": 204,
+        "materials": [
+          "Leather seam thread"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Belt saddle stitch 0.024 segment 0",
+        "vertices": 224,
+        "faces": 204,
+        "materials": [
+          "Leather seam thread"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Fitted glove crease left0 segment 0",
+        "vertices": 416,
+        "faces": 396,
+        "materials": [
+          "Traveler leather glove"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Fitted glove crease left1 segment 0",
+        "vertices": 416,
+        "faces": 396,
+        "materials": [
+          "Traveler leather glove"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Fitted glove crease left2 segment 0",
+        "vertices": 448,
+        "faces": 396,
+        "materials": [
+          "Traveler leather glove"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Fitted glove crease right0 segment 0",
+        "vertices": 416,
+        "faces": 396,
+        "materials": [
+          "Traveler leather glove"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Fitted glove crease right1 segment 0",
+        "vertices": 416,
+        "faces": 396,
+        "materials": [
+          "Traveler leather glove"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Fitted glove crease right2 segment 0",
+        "vertices": 448,
+        "faces": 396,
+        "materials": [
+          "Traveler leather glove"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Original bag flap fine welt segment 0",
+        "vertices": 430,
+        "faces": 396,
+        "materials": [
+          "Bag flap burnished leather"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Short hood opening rolled edge segment 0",
+        "vertices": 416,
+        "faces": 396,
+        "materials": [
+          "Hood edge woven taupe"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Short lower scarf fold segment 0",
+        "vertices": 424,
+        "faces": 396,
+        "materials": [
+          "Hood edge woven taupe"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Short scarf hanging fold segment 0",
+        "vertices": 304,
+        "faces": 284,
+        "materials": [
+          "Hood edge woven taupe"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Short scarf hanging fold segment 1",
+        "vertices": 128,
+        "faces": 108,
+        "materials": [
+          "Hood edge woven taupe"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Short upper scarf fold segment 0",
+        "vertices": 416,
+        "faces": 396,
+        "materials": [
+          "Hood edge woven taupe"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Strap hardware 0.095 left",
+        "vertices": 600,
+        "faces": 300,
+        "materials": [
+          "Traveler old brass hardware"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Strap hardware 0.095 lower",
+        "vertices": 600,
+        "faces": 300,
+        "materials": [
+          "Traveler old brass hardware"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Strap hardware 0.095 right",
+        "vertices": 600,
+        "faces": 300,
+        "materials": [
+          "Traveler old brass hardware"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Strap hardware 0.095 upper",
+        "vertices": 600,
+        "faces": 300,
+        "materials": [
+          "Traveler old brass hardware"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Strap hardware 0.119 left",
+        "vertices": 600,
+        "faces": 300,
+        "materials": [
+          "Traveler old brass hardware"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Strap hardware 0.119 lower",
+        "vertices": 600,
+        "faces": 300,
+        "materials": [
+          "Traveler old brass hardware"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Strap hardware 0.119 right",
+        "vertices": 600,
+        "faces": 300,
+        "materials": [
+          "Traveler old brass hardware"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Strap hardware 0.119 upper",
+        "vertices": 600,
+        "faces": 300,
+        "materials": [
+          "Traveler old brass hardware"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Traveler source / original UV retained",
+        "vertices": 49445,
+        "faces": 49931,
+        "materials": [
+          "Material_0"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      }
+    ],
+    "blender": "4.0.2",
+    "review_status": "producer inspected; pending manager"
+  },
+  "images": [
+    {
+      "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/traveler/previews/neutral/back.png",
+      "size": [
+        512,
+        512
+      ],
+      "pixel_std": 51.65113941522898,
+      "pass": true
+    },
+    {
+      "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/traveler/previews/neutral/front.png",
+      "size": [
+        512,
+        512
+      ],
+      "pixel_std": 54.59096915691829,
+      "pass": true
+    },
+    {
+      "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/traveler/previews/neutral/side.png",
+      "size": [
+        512,
+        512
+      ],
+      "pixel_std": 52.691627435931196,
+      "pass": true
+    },
+    {
+      "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/traveler/previews/neutral/three-quarter.png",
+      "size": [
+        512,
+        512
+      ],
+      "pixel_std": 50.47677110379895,
+      "pass": true
+    },
+    {
+      "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/traveler/previews/closeups/equipment.png",
+      "size": [
+        640,
+        640
+      ],
+      "pixel_std": 42.27656559781159,
+      "pass": true
+    },
+    {
+      "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/traveler/previews/closeups/hands.png",
+      "size": [
+        640,
+        640
+      ],
+      "pixel_std": 38.90873690515732,
+      "pass": true
+    },
+    {
+      "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/traveler/previews/closeups/head.png",
+      "size": [
+        640,
+        640
+      ],
+      "pixel_std": 42.89814422747454,
+      "pass": true
+    }
+  ],
+  "manager_acceptance": "pending",
+  "aesthetic_score": null,
+  "source_uv_position_retention": {
+    "surviving_new_source_pairs": 49415,
+    "matching_old_pairs_at_1e5_quantization": 49296,
+    "fraction_new_source_pairs_retained": 0.9975918243448345,
+    "source_pairs_removed_or_covered": 119,
+    "scope": "largest source-frame mesh only; new manufactured pieces excluded; source positions and UV compared, not just triangle count"
+  },
+  "geometry_changes": [
+    {
+      "operation": "coordinate-invariant shallow source-glove finger channels; no face deletion",
+      "vertices": 119,
+      "max_displacement": 0.001354177699510866,
+      "source_uv_and_all_faces_preserved": true
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Fitted glove crease left0",
+      "segments": 1,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 0,
+      "radius": 0.00028,
+      "offset": 0.00015
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Fitted glove crease left1",
+      "segments": 1,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 0,
+      "radius": 0.00028,
+      "offset": 0.00015
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Fitted glove crease left2",
+      "segments": 1,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 0,
+      "radius": 0.00028,
+      "offset": 0.00015
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Fitted glove crease right0",
+      "segments": 1,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 0,
+      "radius": 0.00028,
+      "offset": 0.00015
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Fitted glove crease right1",
+      "segments": 1,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 0,
+      "radius": 0.00028,
+      "offset": 0.00015
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Fitted glove crease right2",
+      "segments": 1,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 0,
+      "radius": 0.00028,
+      "offset": 0.00015
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Short hood opening rolled edge",
+      "segments": 1,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 0,
+      "radius": 0.00035,
+      "offset": 0.0001
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Short upper scarf fold",
+      "segments": 1,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 0,
+      "radius": 0.00028,
+      "offset": 0.0001
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Short lower scarf fold",
+      "segments": 1,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 0,
+      "radius": 0.00028,
+      "offset": 0.0001
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Short scarf hanging fold",
+      "segments": 2,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 1,
+      "radius": 0.00028,
+      "offset": 0.0001
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Original bag flap fine welt",
+      "segments": 1,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 0,
+      "radius": 0.00035,
+      "offset": 0.0001
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Bag flap short stitching",
+      "segments": 1,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 0,
+      "radius": 0.00025,
+      "offset": 0.0002
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Belt saddle stitch -0.08",
+      "segments": 2,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 1,
+      "radius": 0.00025,
+      "offset": 0.0002
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Belt saddle stitch -0.061",
+      "segments": 1,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 0,
+      "radius": 0.00025,
+      "offset": 0.0002
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Belt saddle stitch 0.0",
+      "segments": 1,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 0,
+      "radius": 0.00025,
+      "offset": 0.0002
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Belt saddle stitch 0.024",
+      "segments": 1,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 0,
+      "radius": 0.00025,
+      "offset": 0.0002
+    }
+  ],
+  "source_limitations": [
+    "finger topology remains the original partially fused mitten; grooves improve separation cues, not recovered anatomy",
+    "rear cloak/bag kept from original image-conditioned mesh",
+    "edges with missing hits/depth jumps are omitted, not invented"
+  ],
+  "status": "pass"
+}

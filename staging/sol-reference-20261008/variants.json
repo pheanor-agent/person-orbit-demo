@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "variants": [
+    {
+      "id": "pikachu-sol-reference-20261008",
+      "model": "pikachu-sol-reference-20261008",
+      "asset": "./assets/sol-reference-20261008/pikachu/model.glb",
+      "family": "pikachu",
+      "label": "Sol · scratch 재제작",
+      "model_label": "피카츄 · Sol scratch 재제작",
+      "status": "success",
+      "state": "pending-manager-acceptance",
+      "author_model": "gpt-6.1-sol",
+      "route": "scratch-source",
+      "note": "기존 피카츄 source/geometry를 재사용하지 않은 profile mesh/곡면 얼굴/테이퍼 귀/번개꼬리. 6초 blink·귀·꼬리·wave·hop 루프. 공식 이미지보다 입과 꼬리/손 포즈는 단순화됨. 팬 재구성, 저작권 보유 주장 없음.",
+      "review_status": "pending-manager-actual-image-acceptance",
+      "report": "./reports/sol-reference-refinement.html"
+    },
+    {
+      "id": "sol-baseball-reference-20261008",
+      "model": "sol-baseball-reference-20261008",
+      "asset": "./assets/sol-reference-20261008/baseball/model.glb",
+      "family": "baseball",
+      "label": "Sol · 원형 보존 제작 수정",
+      "model_label": "야구 · 원본 기반 국소 제작 수정",
+      "status": "success",
+      "state": "pending-manager-acceptance",
+      "author_model": "gpt-6.1-sol",
+      "route": "source-preserving-geometry-detail",
+      "note": "기존 고해상도 전신/UV를 보존하고 어두운 접촉 잔재·distal bat를 국소 삭제 후 목재 bat/단일 side-contact ball/구면 실밥 재제작. 장갑·helmet·바지의 짧은 surface-hit-only 실물 봉제/vent. 원본과 포즈는 다르며 카메라 fit은 pose correction 아님.",
+      "review_status": "pending-manager-actual-image-acceptance",
+      "report": "./reports/sol-reference-refinement.html"
+    },
+    {
+      "id": "sol-traveler-reference-20261008",
+      "model": "sol-traveler-reference-20261008",
+      "asset": "./assets/sol-reference-20261008/traveler/model.glb",
+      "family": "person",
+      "label": "Sol · 원형 보존 제작 수정",
+      "model_label": "후드 여행자 · 원형 보존 디테일",
+      "status": "success",
+      "state": "pending-manager-acceptance",
+      "author_model": "gpt-6.1-sol",
+      "route": "source-preserving-geometry-detail",
+      "note": "원본 얼굴/hood/장갑·망토 모든 face/UV 유지. 장갑 얕은 analytic finger channel, hit-only hood/scarf edge, 원 bag 플랩 welt/closure·strap hardware·belt buckle. 큰 손 재제작과 flat bag cover는 미적 회귀로 폐기. 손 topology의 융합과 단일 이미지 추정 한계는 남음.",
+      "review_status": "pending-manager-actual-image-acceptance",
+      "report": "./reports/sol-reference-refinement.html"
+    },
+    {
+      "id": "sol-machine-reference-20261008",
+      "model": "sol-machine-reference-20261008",
+      "asset": "./assets/sol-reference-20261008/machine/model.glb",
+      "family": "trellis",
+      "label": "Sol · 원형 보존 제작 수정",
+      "model_label": "T형 기계 · 원형 보존 부품 디테일",
+      "status": "success",
+      "state": "pending-manager-acceptance",
+      "author_model": "gpt-6.1-sol",
+      "route": "source-preserving-geometry-detail",
+      "note": "원본 silver housing/windows/frame와 모든 source UV 유지. 실제 32/22/22-tooth gear/close backing, curved pipe/couplings·closed bands/hex rivets·brass rims/bolts·cyan core 추가. 평범한 barrel 대체와 큰 source cuts는 폐기. 원 기어 뒤쪽 잔여와 단일 이미지 추정 한계는 남음.",
+      "review_status": "pending-manager-actual-image-acceptance",
+      "report": "./reports/sol-reference-refinement.html"
+    }
+  ],
+  "representatives": {
+    "cesium": "cesium",
+    "trellis": "trellis",
+    "person": "person",
+    "pelican": "sol-quality-pelican-reviewed",
+    "baseball": "baseball",
+    "pikachu": "pikachu-sol",
+    "lamp": "sol-quality-lamp-reviewed",
+    "garden": "sol-quality-garden-reviewed"
+  },
+  "representatives_changed": false,
+  "publication": "local-only; manager acceptance pending"
+}

@@ -1,0 +1,1027 @@
+{
+  "camera_contract": {
+    "target": [
+      -5.0961971282958984e-06,
+      -0.0032915323972702026,
+      0.005062580108642578
+    ],
+    "scale": 1.5137753009796142,
+    "ground_z": -0.461486722946167,
+    "bounds": {
+      "min": [
+        -0.5019895434379578,
+        -0.19949999451637268,
+        -0.459486722946167
+      ],
+      "max": [
+        0.5019793510437012,
+        0.19291692972183228,
+        0.46961188316345215
+      ]
+    },
+    "policy": "union of source and final dimensions; same fixed neutral/close-up framing"
+  },
+  "neutral": "same fixed camera/light/profile/phase for old and final GLB",
+  "hero": "separate intended hero, not equal-condition quality proof",
+  "actual_gl_identity": {
+    "vendor": "Mesa",
+    "renderer": "llvmpipe (LLVM 20.1.2, 128 bits)",
+    "version": "4.5 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.2"
+  },
+  "views": [
+    "front",
+    "side",
+    "back",
+    "three-quarter"
+  ],
+  "closeups": [
+    "gears",
+    "core"
+  ],
+  "import_method": "actual bpy.ops.import_scene.gltf on final exported GLB",
+  "model_sha256": "24e88ab94c904192567d58ec6d01490f97c1df5704615f960045d69ac1246b97",
+  "mesh_facts": [
+    {
+      "name": "Band brass rivet -0.181 0.177",
+      "vertices": 450,
+      "faces": 508,
+      "materials": [
+        "Brass edge polished"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Band brass rivet -0.181 0.276",
+      "vertices": 450,
+      "faces": 508,
+      "materials": [
+        "Brass edge polished"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Band brass rivet -0.181 0.366",
+      "vertices": 450,
+      "faces": 508,
+      "materials": [
+        "Brass edge polished"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Band brass rivet 0.181 0.177",
+      "vertices": 450,
+      "faces": 508,
+      "materials": [
+        "Brass edge polished"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Band brass rivet 0.181 0.276",
+      "vertices": 450,
+      "faces": 508,
+      "materials": [
+        "Brass edge polished"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Band brass rivet 0.181 0.366",
+      "vertices": 450,
+      "faces": 508,
+      "materials": [
+        "Brass edge polished"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Band front gear mount -0.181",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Black barrel strap rubber"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Band front gear mount 0.181",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Black barrel strap rubber"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Band hex socket -0.181 0.177",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Bolt socket dark steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Band hex socket -0.181 0.276",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Bolt socket dark steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Band hex socket -0.181 0.366",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Bolt socket dark steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Band hex socket 0.181 0.177",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Bolt socket dark steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Band hex socket 0.181 0.276",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Bolt socket dark steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Band hex socket 0.181 0.366",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Bolt socket dark steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Barrel brass turned rim -0.476",
+      "vertices": 931,
+      "faces": 1152,
+      "materials": [
+        "Brass edge polished"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Barrel brass turned rim 0.476",
+      "vertices": 931,
+      "faces": 1152,
+      "materials": [
+        "Brass edge polished"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Barrel end hex fastener -0.476 0",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Barrel end hex fastener -0.476 1",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Barrel end hex fastener -0.476 2",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Barrel end hex fastener -0.476 3",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Barrel end hex fastener -0.476 4",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Barrel end hex fastener -0.476 5",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Barrel end hex fastener -0.476 6",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Barrel end hex fastener -0.476 7",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Barrel end hex fastener 0.476 0",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Barrel end hex fastener 0.476 1",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Barrel end hex fastener 0.476 2",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Barrel end hex fastener 0.476 3",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Barrel end hex fastener 0.476 4",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Barrel end hex fastener 0.476 5",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Barrel end hex fastener 0.476 6",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Barrel end hex fastener 0.476 7",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Central front gear",
+      "vertices": 9728,
+      "faces": 5120,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Central front gear axle",
+      "vertices": 450,
+      "faces": 508,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Central front gear axle socket",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Bolt socket dark steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Central front gear closed near backing",
+      "vertices": 898,
+      "faces": 1020,
+      "materials": [
+        "Bolt socket dark steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Central front gear radial web 0",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Central front gear radial web 1",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Central front gear radial web 2",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Central front gear radial web 3",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Central front gear radial web 4",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Central front gear radial web 5",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Central front gear solid hub",
+      "vertices": 674,
+      "faces": 764,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Closed black barrel band -0.181",
+      "vertices": 768,
+      "faces": 768,
+      "materials": [
+        "Black barrel strap rubber"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Closed black barrel band 0.181",
+      "vertices": 768,
+      "faces": 768,
+      "materials": [
+        "Black barrel strap rubber"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Continuous curved top pipe",
+      "vertices": 2002,
+      "faces": 2688,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Cyan brass pressure collar -0.205",
+      "vertices": 898,
+      "faces": 1020,
+      "materials": [
+        "Brass edge polished"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Cyan brass pressure collar 0.119",
+      "vertices": 898,
+      "faces": 1020,
+      "materials": [
+        "Brass edge polished"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Cyan central cylinder",
+      "vertices": 898,
+      "faces": 1020,
+      "materials": [
+        "Cyan energy glass portable"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Cyan dark gasket -0.205",
+      "vertices": 931,
+      "faces": 1152,
+      "materials": [
+        "Black barrel strap rubber"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Cyan dark gasket 0.119",
+      "vertices": 931,
+      "faces": 1152,
+      "materials": [
+        "Black barrel strap rubber"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Cyan pipe central tube",
+      "vertices": 674,
+      "faces": 764,
+      "materials": [
+        "Cyan energy glass portable"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Left front gear",
+      "vertices": 6688,
+      "faces": 3520,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Left front gear axle",
+      "vertices": 450,
+      "faces": 508,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Left front gear axle socket",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Bolt socket dark steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Left front gear closed near backing",
+      "vertices": 898,
+      "faces": 1020,
+      "materials": [
+        "Bolt socket dark steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Left front gear radial web 0",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Left front gear radial web 1",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Left front gear radial web 2",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Left front gear radial web 3",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Left front gear radial web 4",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Left front gear radial web 5",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Left front gear solid hub",
+      "vertices": 674,
+      "faces": 764,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Lower flange bolt 0",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Lower flange bolt 1",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Lower flange bolt 2",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Lower flange bolt 3",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Lower flange bolt 4",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Lower flange bolt 5",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Lower flange bolt 6",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Lower flange bolt 7",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Lower flange bolt 8",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Lower flange bolt 9",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Lower support turned brass flange",
+      "vertices": 931,
+      "faces": 1152,
+      "materials": [
+        "Brass edge polished"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Pipe brass compression coupling -0.295",
+      "vertices": 450,
+      "faces": 508,
+      "materials": [
+        "Brass edge polished"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Pipe brass compression coupling 0.295",
+      "vertices": 450,
+      "faces": 508,
+      "materials": [
+        "Brass edge polished"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Pipe coupling dark joint -0.295",
+      "vertices": 450,
+      "faces": 508,
+      "materials": [
+        "Bolt socket dark steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Pipe coupling dark joint 0.295",
+      "vertices": 450,
+      "faces": 508,
+      "materials": [
+        "Bolt socket dark steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Right front gear",
+      "vertices": 6688,
+      "faces": 3520,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Right front gear axle",
+      "vertices": 450,
+      "faces": 508,
+      "materials": [
+        "Turned silvery steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Right front gear axle socket",
+      "vertices": 196,
+      "faces": 284,
+      "materials": [
+        "Bolt socket dark steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Right front gear closed near backing",
+      "vertices": 898,
+      "faces": 1020,
+      "materials": [
+        "Bolt socket dark steel"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Right front gear radial web 0",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Right front gear radial web 1",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Right front gear radial web 2",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Right front gear radial web 3",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Right front gear radial web 4",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Right front gear radial web 5",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Right front gear solid hub",
+      "vertices": 674,
+      "faces": 764,
+      "materials": [
+        "Machined aged brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "T machine source frame / UV retained",
+      "vertices": 49188,
+      "faces": 48334,
+      "materials": [
+        "Material_0"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    }
+  ],
+  "blender": "4.0.2",
+  "review_status": "producer inspected; pending manager"
+}

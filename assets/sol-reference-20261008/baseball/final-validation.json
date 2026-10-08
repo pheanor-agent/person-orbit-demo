@@ -1,0 +1,769 @@
+{
+  "subject": "baseball",
+  "model_sha256": "45f7d850f0ef1b4495588be7e48ba24cc1334c2b6258b85696b9786f79aeb188",
+  "source_sha256": "304435f2380efe260eac07173af22404a603faa0825edbc5568e510ace8966d7",
+  "source_sha_matches_manifest": true,
+  "glb": {
+    "bytes": 20987260,
+    "sha256": "45f7d850f0ef1b4495588be7e48ba24cc1334c2b6258b85696b9786f79aeb188",
+    "meshes": 55,
+    "triangles": 347641,
+    "materials": 8,
+    "images": 3,
+    "external_uris": []
+  },
+  "khronos_errors": 0,
+  "khronos_warnings": 0,
+  "actual_import_render": {
+    "camera_contract": {
+      "target": [
+        -0.0005642026662826538,
+        -0.0008802711963653564,
+        0.0022520869970321655
+      ],
+      "scale": 1.751220006942749,
+      "ground_z": -0.4968982298374176,
+      "bounds": {
+        "min": [
+          -0.3849719166755676,
+          -0.4757677912712097,
+          -0.4948982298374176
+        ],
+        "max": [
+          0.3838435113430023,
+          0.474007248878479,
+          0.49940240383148193
+        ]
+      },
+      "policy": "union of source and final dimensions; same fixed neutral/close-up framing"
+    },
+    "neutral": "same fixed camera/light/profile/phase for old and final GLB",
+    "hero": "separate intended hero, not equal-condition quality proof",
+    "actual_gl_identity": {
+      "vendor": "Mesa",
+      "renderer": "llvmpipe (LLVM 20.1.2, 128 bits)",
+      "version": "4.5 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.2"
+    },
+    "views": [
+      "front",
+      "side",
+      "back",
+      "three-quarter"
+    ],
+    "closeups": [
+      "contact",
+      "hands",
+      "helmet"
+    ],
+    "import_method": "actual bpy.ops.import_scene.gltf on final exported GLB",
+    "model_sha256": "45f7d850f0ef1b4495588be7e48ba24cc1334c2b6258b85696b9786f79aeb188",
+    "mesh_facts": [
+      {
+        "name": "Ball curved seam -1",
+        "vertices": 1376,
+        "faces": 1292,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball curved seam 1",
+        "vertices": 1376,
+        "faces": 1292,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch -1 14",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch -1 19",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch -1 24",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch -1 29",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch -1 34",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch -1 39",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch -1 4",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch -1 44",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch -1 49",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch -1 54",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch -1 59",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch -1 64",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch -1 69",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch -1 74",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch -1 9",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch 1 14",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch 1 19",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch 1 24",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch 1 29",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch 1 34",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch 1 39",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch 1 4",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch 1 44",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch 1 49",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch 1 54",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch 1 59",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch 1 64",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch 1 69",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch 1 74",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Ball tangential stitch 1 9",
+        "vertices": 48,
+        "faces": 32,
+        "materials": [
+          "Baseball red recessed seams"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Glove finger seam 0 segment 0",
+        "vertices": 416,
+        "faces": 396,
+        "materials": [
+          "Glove charcoal piping"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Glove finger seam 1 segment 0",
+        "vertices": 416,
+        "faces": 396,
+        "materials": [
+          "Glove charcoal piping"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Glove finger seam 2 segment 0",
+        "vertices": 416,
+        "faces": 396,
+        "materials": [
+          "Glove charcoal piping"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Glove finger seam 3 segment 0",
+        "vertices": 128,
+        "faces": 108,
+        "materials": [
+          "Glove charcoal piping"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Glove finger seam 3 segment 1",
+        "vertices": 304,
+        "faces": 284,
+        "materials": [
+          "Glove charcoal piping"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Grip winding 0",
+        "vertices": 931,
+        "faces": 1152,
+        "materials": [
+          "Handle grip"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Grip winding 1",
+        "vertices": 931,
+        "faces": 1152,
+        "materials": [
+          "Handle grip"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Grip winding 2",
+        "vertices": 931,
+        "faces": 1152,
+        "materials": [
+          "Handle grip"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Grip winding 3",
+        "vertices": 931,
+        "faces": 1152,
+        "materials": [
+          "Handle grip"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Grip winding 4",
+        "vertices": 931,
+        "faces": 1152,
+        "materials": [
+          "Handle grip"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Grip winding 5",
+        "vertices": 931,
+        "faces": 1152,
+        "materials": [
+          "Handle grip"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Grip winding 6",
+        "vertices": 931,
+        "faces": 1152,
+        "materials": [
+          "Handle grip"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Grip winding 7",
+        "vertices": 931,
+        "faces": 1152,
+        "materials": [
+          "Handle grip"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Grip winding 8",
+        "vertices": 931,
+        "faces": 1152,
+        "materials": [
+          "Handle grip"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Grip winding 9",
+        "vertices": 931,
+        "faces": 1152,
+        "materials": [
+          "Handle grip"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Helmet fine vent 0 segment 0",
+        "vertices": 224,
+        "faces": 204,
+        "materials": [
+          "Helmet rubber edge"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Helmet fine vent 1 segment 0",
+        "vertices": 224,
+        "faces": 204,
+        "materials": [
+          "Helmet rubber edge"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "High-res player / source UV retained",
+        "vertices": 381165,
+        "faces": 326109,
+        "materials": [
+          "Material_0"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Reconstructed maple bat",
+        "vertices": 778,
+        "faces": 1276,
+        "materials": [
+          "Maple bat / portable baked grain"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      },
+      {
+        "name": "Short helmet rubber seam segment 0",
+        "vertices": 416,
+        "faces": 396,
+        "materials": [
+          "Helmet rubber edge"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Short retained trouser seam segment 0",
+        "vertices": 224,
+        "faces": 140,
+        "materials": [
+          "Uniform subtle stitched white"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Short retained trouser seam segment 1",
+        "vertices": 374,
+        "faces": 236,
+        "materials": [
+          "Uniform subtle stitched white"
+        ],
+        "uv_layers": []
+      },
+      {
+        "name": "Single contact baseball",
+        "vertices": 1363,
+        "faces": 2432,
+        "materials": [
+          "Baseball ivory leather"
+        ],
+        "uv_layers": [
+          "UVMap"
+        ]
+      }
+    ],
+    "blender": "4.0.2",
+    "review_status": "producer inspected; pending manager"
+  },
+  "images": [
+    {
+      "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/baseball/previews/neutral/back.png",
+      "size": [
+        512,
+        512
+      ],
+      "pixel_std": 42.1577095153056,
+      "pass": true
+    },
+    {
+      "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/baseball/previews/neutral/front.png",
+      "size": [
+        512,
+        512
+      ],
+      "pixel_std": 43.00588822103909,
+      "pass": true
+    },
+    {
+      "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/baseball/previews/neutral/side.png",
+      "size": [
+        512,
+        512
+      ],
+      "pixel_std": 43.40344542898478,
+      "pass": true
+    },
+    {
+      "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/baseball/previews/neutral/three-quarter.png",
+      "size": [
+        512,
+        512
+      ],
+      "pixel_std": 39.069732980565085,
+      "pass": true
+    },
+    {
+      "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/baseball/previews/closeups/contact.png",
+      "size": [
+        640,
+        640
+      ],
+      "pixel_std": 36.05469638414898,
+      "pass": true
+    },
+    {
+      "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/baseball/previews/closeups/hands.png",
+      "size": [
+        640,
+        640
+      ],
+      "pixel_std": 56.02749852885936,
+      "pass": true
+    },
+    {
+      "path": "/home/pheanor/projects/3d-modeling-workbench/assets/reference-refinement-20261008/baseball/previews/closeups/helmet.png",
+      "size": [
+        640,
+        640
+      ],
+      "pixel_std": 57.65594683507262,
+      "pass": true
+    }
+  ],
+  "manager_acceptance": "pending",
+  "aesthetic_score": null,
+  "source_uv_position_retention": {
+    "surviving_new_source_pairs": 380652,
+    "matching_old_pairs_at_1e5_quantization": 380652,
+    "fraction_new_source_pairs_retained": 1.0,
+    "source_pairs_removed_or_covered": 2815,
+    "scope": "largest source-frame mesh only; new manufactured pieces excluded; source positions and UV compared, not just triangle count"
+  },
+  "geometry_changes": [
+    {
+      "operation": "delete source-region faces, retaining all surviving UV loops",
+      "object": "High-res player / source UV retained",
+      "region": "distal bat, dark contact residue and fused source-ball traces",
+      "removed_faces": 2853
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Glove finger seam 0",
+      "segments": 1,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 0,
+      "radius": 0.00032,
+      "offset": 0.0002
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Glove finger seam 1",
+      "segments": 1,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 0,
+      "radius": 0.00032,
+      "offset": 0.0002
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Glove finger seam 2",
+      "segments": 1,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 0,
+      "radius": 0.00032,
+      "offset": 0.0002
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Glove finger seam 3",
+      "segments": 2,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 1,
+      "radius": 0.00032,
+      "offset": 0.0002
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Short helmet rubber seam",
+      "segments": 1,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 0,
+      "radius": 0.00065,
+      "offset": 0.0003
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Helmet fine vent 0",
+      "segments": 1,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 0,
+      "radius": 0.00065,
+      "offset": 0.0002
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Helmet fine vent 1",
+      "segments": 1,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 0,
+      "radius": 0.00065,
+      "offset": 0.0002
+    },
+    {
+      "operation": "normal-offset source-hit-only physical seam",
+      "name": "Short retained trouser seam",
+      "segments": 2,
+      "missed_hits_omitted": 0,
+      "depth_breaks": 2,
+      "radius": 0.00035,
+      "offset": 0.0002
+    }
+  ],
+  "source_limitations": [
+    "source pose differs from original image; camera alignment does not repair pose",
+    "hidden surfaces / fine anatomy inferred; hand/helmet not anatomically replaced",
+    "retained source mesh has reconstruction artifacts outside edited ROIs"
+  ],
+  "status": "pass",
+  "ball_contact": {
+    "ball_center": [
+      0.18817660212516785,
+      -0.4266451299190521,
+      0.07361999899148941
+    ],
+    "ball_radius": 0.02858,
+    "bat_axis_contact": [
+      0.22935998439788818,
+      -0.3914400041103363,
+      0.07361999899148941
+    ],
+    "side_normal": [
+      -0.7601213455200195,
+      -0.6497810482978821,
+      0.0
+    ],
+    "analytic_surface_penetration": 0.0008,
+    "one_ball": true,
+    "relation": "side of barrel, not balanced on top",
+    "stitches_max_radial_offset": 0.00045
+  },
+  "single_ball_node_count": 1
+}

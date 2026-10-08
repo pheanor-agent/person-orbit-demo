@@ -1,0 +1,569 @@
+{
+  "camera_contract": {
+    "target": [
+      -0.0005642026662826538,
+      -0.0008802711963653564,
+      0.0022520869970321655
+    ],
+    "scale": 1.751220006942749,
+    "ground_z": -0.4968982298374176,
+    "bounds": {
+      "min": [
+        -0.3849719166755676,
+        -0.4757677912712097,
+        -0.4948982298374176
+      ],
+      "max": [
+        0.3838435113430023,
+        0.474007248878479,
+        0.49940240383148193
+      ]
+    },
+    "policy": "union of source and final dimensions; same fixed neutral/close-up framing"
+  },
+  "neutral": "same fixed camera/light/profile/phase for old and final GLB",
+  "hero": "separate intended hero, not equal-condition quality proof",
+  "actual_gl_identity": {
+    "vendor": "Mesa",
+    "renderer": "llvmpipe (LLVM 20.1.2, 128 bits)",
+    "version": "4.5 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.2"
+  },
+  "views": [
+    "front",
+    "side",
+    "back",
+    "three-quarter"
+  ],
+  "closeups": [
+    "contact",
+    "hands",
+    "helmet"
+  ],
+  "import_method": "actual bpy.ops.import_scene.gltf on final exported GLB",
+  "model_sha256": "45f7d850f0ef1b4495588be7e48ba24cc1334c2b6258b85696b9786f79aeb188",
+  "mesh_facts": [
+    {
+      "name": "Ball curved seam -1",
+      "vertices": 1376,
+      "faces": 1292,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball curved seam 1",
+      "vertices": 1376,
+      "faces": 1292,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch -1 14",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch -1 19",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch -1 24",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch -1 29",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch -1 34",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch -1 39",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch -1 4",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch -1 44",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch -1 49",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch -1 54",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch -1 59",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch -1 64",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch -1 69",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch -1 74",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch -1 9",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch 1 14",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch 1 19",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch 1 24",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch 1 29",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch 1 34",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch 1 39",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch 1 4",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch 1 44",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch 1 49",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch 1 54",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch 1 59",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch 1 64",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch 1 69",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch 1 74",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Ball tangential stitch 1 9",
+      "vertices": 48,
+      "faces": 32,
+      "materials": [
+        "Baseball red recessed seams"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Glove finger seam 0 segment 0",
+      "vertices": 416,
+      "faces": 396,
+      "materials": [
+        "Glove charcoal piping"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Glove finger seam 1 segment 0",
+      "vertices": 416,
+      "faces": 396,
+      "materials": [
+        "Glove charcoal piping"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Glove finger seam 2 segment 0",
+      "vertices": 416,
+      "faces": 396,
+      "materials": [
+        "Glove charcoal piping"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Glove finger seam 3 segment 0",
+      "vertices": 128,
+      "faces": 108,
+      "materials": [
+        "Glove charcoal piping"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Glove finger seam 3 segment 1",
+      "vertices": 304,
+      "faces": 284,
+      "materials": [
+        "Glove charcoal piping"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Grip winding 0",
+      "vertices": 931,
+      "faces": 1152,
+      "materials": [
+        "Handle grip"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Grip winding 1",
+      "vertices": 931,
+      "faces": 1152,
+      "materials": [
+        "Handle grip"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Grip winding 2",
+      "vertices": 931,
+      "faces": 1152,
+      "materials": [
+        "Handle grip"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Grip winding 3",
+      "vertices": 931,
+      "faces": 1152,
+      "materials": [
+        "Handle grip"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Grip winding 4",
+      "vertices": 931,
+      "faces": 1152,
+      "materials": [
+        "Handle grip"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Grip winding 5",
+      "vertices": 931,
+      "faces": 1152,
+      "materials": [
+        "Handle grip"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Grip winding 6",
+      "vertices": 931,
+      "faces": 1152,
+      "materials": [
+        "Handle grip"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Grip winding 7",
+      "vertices": 931,
+      "faces": 1152,
+      "materials": [
+        "Handle grip"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Grip winding 8",
+      "vertices": 931,
+      "faces": 1152,
+      "materials": [
+        "Handle grip"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Grip winding 9",
+      "vertices": 931,
+      "faces": 1152,
+      "materials": [
+        "Handle grip"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Helmet fine vent 0 segment 0",
+      "vertices": 224,
+      "faces": 204,
+      "materials": [
+        "Helmet rubber edge"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Helmet fine vent 1 segment 0",
+      "vertices": 224,
+      "faces": 204,
+      "materials": [
+        "Helmet rubber edge"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "High-res player / source UV retained",
+      "vertices": 381165,
+      "faces": 326109,
+      "materials": [
+        "Material_0"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Reconstructed maple bat",
+      "vertices": 778,
+      "faces": 1276,
+      "materials": [
+        "Maple bat / portable baked grain"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Short helmet rubber seam segment 0",
+      "vertices": 416,
+      "faces": 396,
+      "materials": [
+        "Helmet rubber edge"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Short retained trouser seam segment 0",
+      "vertices": 224,
+      "faces": 140,
+      "materials": [
+        "Uniform subtle stitched white"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Short retained trouser seam segment 1",
+      "vertices": 374,
+      "faces": 236,
+      "materials": [
+        "Uniform subtle stitched white"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Single contact baseball",
+      "vertices": 1363,
+      "faces": 2432,
+      "materials": [
+        "Baseball ivory leather"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    }
+  ],
+  "blender": "4.0.2",
+  "review_status": "producer inspected; pending manager"
+}

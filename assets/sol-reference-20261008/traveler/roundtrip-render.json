@@ -1,0 +1,386 @@
+{
+  "camera_contract": {
+    "target": [
+      0.0007678866386413574,
+      0.0002586096525192261,
+      -3.933906555175781e-05
+    ],
+    "scale": 1.4202155876159668,
+    "ground_z": -0.503306414604187,
+    "bounds": {
+      "min": [
+        -0.20233552157878876,
+        -0.22114093601703644,
+        -0.501306414604187
+      ],
+      "max": [
+        0.20387129485607147,
+        0.2216581553220749,
+        0.5012277364730835
+      ]
+    },
+    "policy": "union of source and final dimensions; same fixed neutral/close-up framing"
+  },
+  "neutral": "same fixed camera/light/profile/phase for old and final GLB",
+  "hero": "separate intended hero, not equal-condition quality proof",
+  "actual_gl_identity": {
+    "vendor": "Mesa",
+    "renderer": "llvmpipe (LLVM 20.1.2, 128 bits)",
+    "version": "4.5 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.2"
+  },
+  "views": [
+    "front",
+    "side",
+    "back",
+    "three-quarter"
+  ],
+  "closeups": [
+    "head",
+    "equipment",
+    "hands"
+  ],
+  "import_method": "actual bpy.ops.import_scene.gltf on final exported GLB",
+  "model_sha256": "5771786ba861ea5ee4aabf38ee659fdc4c92a41ca8ddcfcfb509ef3293cab9f6",
+  "mesh_facts": [
+    {
+      "name": "Bag brass closure 0.113",
+      "vertices": 338,
+      "faces": 380,
+      "materials": [
+        "Traveler old brass hardware"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Bag brass closure 0.142",
+      "vertices": 338,
+      "faces": 380,
+      "materials": [
+        "Traveler old brass hardware"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Bag flap short stitching segment 0",
+      "vertices": 432,
+      "faces": 396,
+      "materials": [
+        "Leather seam thread"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Belt brass buckle left",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Traveler old brass hardware"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Belt brass buckle lower",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Traveler old brass hardware"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Belt brass buckle right",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Traveler old brass hardware"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Belt brass buckle tongue",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Traveler old brass hardware"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Belt brass buckle upper",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Traveler old brass hardware"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Belt saddle stitch -0.061 segment 0",
+      "vertices": 224,
+      "faces": 204,
+      "materials": [
+        "Leather seam thread"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Belt saddle stitch -0.08 segment 0",
+      "vertices": 174,
+      "faces": 140,
+      "materials": [
+        "Leather seam thread"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Belt saddle stitch -0.08 segment 1",
+      "vertices": 80,
+      "faces": 60,
+      "materials": [
+        "Leather seam thread"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Belt saddle stitch 0.0 segment 0",
+      "vertices": 240,
+      "faces": 204,
+      "materials": [
+        "Leather seam thread"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Belt saddle stitch 0.024 segment 0",
+      "vertices": 224,
+      "faces": 204,
+      "materials": [
+        "Leather seam thread"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Fitted glove crease left0 segment 0",
+      "vertices": 416,
+      "faces": 396,
+      "materials": [
+        "Traveler leather glove"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Fitted glove crease left1 segment 0",
+      "vertices": 416,
+      "faces": 396,
+      "materials": [
+        "Traveler leather glove"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Fitted glove crease left2 segment 0",
+      "vertices": 448,
+      "faces": 396,
+      "materials": [
+        "Traveler leather glove"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Fitted glove crease right0 segment 0",
+      "vertices": 416,
+      "faces": 396,
+      "materials": [
+        "Traveler leather glove"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Fitted glove crease right1 segment 0",
+      "vertices": 416,
+      "faces": 396,
+      "materials": [
+        "Traveler leather glove"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Fitted glove crease right2 segment 0",
+      "vertices": 448,
+      "faces": 396,
+      "materials": [
+        "Traveler leather glove"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Original bag flap fine welt segment 0",
+      "vertices": 430,
+      "faces": 396,
+      "materials": [
+        "Bag flap burnished leather"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Short hood opening rolled edge segment 0",
+      "vertices": 416,
+      "faces": 396,
+      "materials": [
+        "Hood edge woven taupe"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Short lower scarf fold segment 0",
+      "vertices": 424,
+      "faces": 396,
+      "materials": [
+        "Hood edge woven taupe"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Short scarf hanging fold segment 0",
+      "vertices": 304,
+      "faces": 284,
+      "materials": [
+        "Hood edge woven taupe"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Short scarf hanging fold segment 1",
+      "vertices": 128,
+      "faces": 108,
+      "materials": [
+        "Hood edge woven taupe"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Short upper scarf fold segment 0",
+      "vertices": 416,
+      "faces": 396,
+      "materials": [
+        "Hood edge woven taupe"
+      ],
+      "uv_layers": []
+    },
+    {
+      "name": "Strap hardware 0.095 left",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Traveler old brass hardware"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Strap hardware 0.095 lower",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Traveler old brass hardware"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Strap hardware 0.095 right",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Traveler old brass hardware"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Strap hardware 0.095 upper",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Traveler old brass hardware"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Strap hardware 0.119 left",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Traveler old brass hardware"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Strap hardware 0.119 lower",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Traveler old brass hardware"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Strap hardware 0.119 right",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Traveler old brass hardware"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Strap hardware 0.119 upper",
+      "vertices": 600,
+      "faces": 300,
+      "materials": [
+        "Traveler old brass hardware"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Traveler source / original UV retained",
+      "vertices": 49445,
+      "faces": 49931,
+      "materials": [
+        "Material_0"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ]
+    }
+  ],
+  "blender": "4.0.2",
+  "review_status": "producer inspected; pending manager"
+}
