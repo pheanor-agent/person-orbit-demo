@@ -74,6 +74,16 @@
       "source_dimensions": "8192x4096",
       "processing_note": "official tonemapped JPG resized to 4096x2048",
       "sha256": "a3754b0f8bd6817ac4a12a26d617ce5f65437459caf30c487f1b065bba473e68"
+    },
+    "small_rural_road": {
+      "file": "small_rural_road.jpg",
+      "label_ko": "포장 시골길",
+      "source_page": "https://polyhaven.com/a/small_rural_road",
+      "source_download": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/small_rural_road.jpg",
+      "license": "CC0",
+      "source_dimensions": "8192x4096",
+      "processing_note": "official tonemapped JPG resized to 4096x2048 with Pillow Lanczos, RGB JPEG quality 90, optimized/progressive, 4:4:4 chroma",
+      "sha256": "b59edd4dcf30bac876fbbba6acf619f63ef70353d97bbf726a5cfc01268657e1"
     }
   }
 }

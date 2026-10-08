@@ -16,7 +16,7 @@
 <header class="topbar"><div class="brand"><div class="mark" aria-hidden="true"></div><div><div class="brand-title">ORBIT / OBJECT VIEWER</div><div class="brand-sub">CHARACTER STUDY · MODEL COLLECTION</div></div></div><div class="top-meta"><span>INTERACTIVE / 3D</span><span class="live"><i></i> RENDER READY</span></div></header>
 <main class="layout"><section class="viewport-wrap" aria-label="움직이는 3D 모델 뷰"><canvas id="stage" class="stage" aria-label="드래그하여 모델 주변의 시점을 회전하는 3D 장면"></canvas><div class="scene-label"><strong>01</strong> &nbsp; / &nbsp; ORBITAL VIEW</div><div class="crosshair" aria-hidden="true"></div><div class="hint">드래그 · 회전 &nbsp;&nbsp; 휠 / 핀치 · 줌</div></section>
 <aside class="panel"><section class="object-card"><div class="eyebrow">선택된 오브젝트</div><div class="object-head"><div class="object-name" id="modelName">Cesium Man</div><div class="badge" id="modelBadge">GLB MODEL</div></div><div class="dimensions" id="modelDims">로딩 중…</div><div class="rule"></div><div class="status" id="status" role="status" aria-live="polite">초기화 중…</div></section>
-<section class="section"><div class="section-title"><span class="eyebrow">360° 배경</span><span>ENVIRONMENT</span></div><div class="choice-list" id="backgroundChoices" role="group" aria-label="360도 배경 선택"><button class="choice-button" type="button" data-background="auto">어셋에 맞춤 · 자동</button><button class="choice-button" type="button" data-background="default">단색 스튜디오 · 수동</button><button class="choice-button" type="button" data-background="urban-courtyard">도시 안뜰</button><button class="choice-button" type="button" data-background="machine-shop">기계 작업장</button><button class="choice-button" type="button" data-background="monks-forest">숲길</button><button class="choice-button" type="button" data-background="stadium">경기장</button><button class="choice-button" type="button" data-background="meadow">햇살 초원</button><button class="choice-button" type="button" data-background="bell-park-pier">호숫가 부두</button><button class="choice-button" type="button" data-background="autumn-park">가을 공원</button></div><div class="dimensions" id="backgroundStatus" role="status" aria-live="polite">어셋과 별도로 선택할 수 있습니다.</div></section>
+<section class="section"><div class="section-title"><span class="eyebrow">360° 배경</span><span>ENVIRONMENT</span></div><div class="choice-list" id="backgroundChoices" role="group" aria-label="360도 배경 선택"><button class="choice-button" type="button" data-background="auto">어셋에 맞춤 · 자동</button><button class="choice-button" type="button" data-background="default">단색 스튜디오 · 수동</button><button class="choice-button" type="button" data-background="urban-courtyard">도시 안뜰</button><button class="choice-button" type="button" data-background="machine-shop">기계 작업장</button><button class="choice-button" type="button" data-background="monks-forest">숲길</button><button class="choice-button" type="button" data-background="stadium">경기장</button><button class="choice-button" type="button" data-background="meadow">햇살 초원</button><button class="choice-button" type="button" data-background="bell-park-pier">호숫가 부두</button><button class="choice-button" type="button" data-background="small-rural-road">포장 시골길</button><button class="choice-button" type="button" data-background="autumn-park">가을 공원</button></div><div class="dimensions" id="backgroundStatus" role="status" aria-live="polite">어셋과 별도로 선택할 수 있습니다.</div></section>
 <section class="section"><div class="section-title"><span class="eyebrow">샘플 선택</span><span>COLLECTION</span></div><div class="choice-list" id="modelChoices" role="group" aria-label="3D 모델 선택"><button class="choice-button" type="button" data-model="cesium">Cesium Man · 걷기</button><button class="choice-button" type="button" data-model="trellis">T형 기계</button><button class="choice-button" type="button" data-model="person">후드 여행자</button><button class="choice-button" type="button" data-model="pelican">펠리컨 · 자전거</button><details class="choice-group" data-model-group="baseball"><summary>야구 타자 · 5가지 버전</summary><div class="choice-list nested"><button class="choice-button" type="button" data-model="baseball">기본 타격 순간</button><button class="choice-button" type="button" data-model="baseball-geometry">형상 보정</button><button class="choice-button" type="button" data-model="baseball-projection">원본 이미지 투영</button><button class="choice-button" type="button" data-model="baseball-hires">고해상도 + 공 보정</button><button class="choice-button" type="button" data-model="baseball-retexture">AI 재질 보정</button></div></details><details class="choice-group" data-model-group="pikachu"><summary>피카츄 · 2가지 버전</summary><div class="choice-list nested"><button class="choice-button" type="button" data-model="pikachu-sol">Sol</button><button class="choice-button" type="button" data-model="pikachu-astra">Astra</button></div></details></div><div class="sample-links"><a id="sampleLink" href="?model=cesium">이 샘플 바로 열기 ↗</a><button id="copyLink" type="button">링크 복사</button></div></section>
 <section class="section motion-section" id="motionControls" hidden><div class="section-title"><span class="eyebrow">애니메이션</span><span id="motionPhase">반복 동작</span></div><div class="motion-buttons"><button class="button" id="motionPlay" aria-pressed="true">Ⅱ 동작 일시정지</button><button class="button" id="motionRestart" aria-label="동작 처음부터">↺ 처음부터</button></div><input id="motionTimeline" type="range" min="0" max="16" value="0" step="0.01" aria-label="애니메이션 재생 위치"><div class="motion-time"><span id="motionTime">0.0 / 16.0초</span><label>속도 <select id="motionSpeed" aria-label="애니메이션 속도"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option></select></label></div></section>
 
@@ -32303,16 +32303,15 @@ void main() {
       const isLightScene = isPikachu || loadedPreset === "pelican";
       if (isPikachu) applyPikachuStyle(gltf.scene);
       canvas.parentElement.classList.toggle("anime-scene", isPikachu);
-      if (selectedBackground === "default") {
+      if (appliedBackground === "default" && !scene.background?.isTexture) {
         scene.background.set(isLightScene ? "#eef4f8" : "#111416");
         scene.fog = new Fog(isLightScene ? "#eef4f8" : "#111416", 9, 24);
         floor.material.color.set(isLightScene ? "#e4ebf1" : 1580061);
         floor.material.metalness = isLightScene ? 0 : 0.16;
       }
-      floor.geometry.dispose();
-      floor.geometry = new CircleGeometry(selectedBackground === "default" ? 4.2 : 1.8, 64);
-      grid.visible = selectedBackground === "default" && !isLightScene;
-      ring.visible = selectedBackground === "default" && !isLightScene;
+      floor.visible = !scene.background?.isTexture;
+      grid.visible = !scene.background?.isTexture && !isLightScene;
+      ring.visible = !scene.background?.isTexture && !isLightScene;
       const fit = (isLightScene ? 2.25 : 2.65) / Math.max(size.x, size.y, size.z, 1e-3);
       modelRoot.scale.setScalar(fit);
       modelRoot.position.set(-center.x * fit, -bounds.min.y * fit, -center.z * fit);
@@ -32320,6 +32319,8 @@ void main() {
       target.set(0, Math.max(0.65, size.y * fit * (isLightScene ? 0.58 : 0.48)), 0);
       defaultDistance = isLightScene ? 5.5 : 5.1;
       distance = defaultDistance;
+      yaw = loadedPreset === "pelican" ? Math.PI / 2 : 0;
+      pitch = 0.04;
       mixer = new AnimationMixer(gltf.scene);
       activeAnimations = gltf.animations || [];
       animationAction = activeAnimations.length ? mixer.clipAction(activeAnimations[0]).play() : null;
@@ -32359,14 +32360,15 @@ void main() {
     "urban-courtyard": { asset: "./assets/backgrounds/urban_courtyard_02.jpg", label: "도시 안뜰", rotationY: 0.42 },
     "machine-shop": { asset: "./assets/backgrounds/machine_shop_02.jpg", label: "기계 작업장", rotationY: -0.7 },
     stadium: { asset: "./assets/backgrounds/stadium_01.jpg", label: "경기장", rotationY: 0.15 },
-    meadow: { asset: "./assets/backgrounds/meadow_2.jpg", label: "햇살 초원", rotationY: -0.25 },
-    "bell-park-pier": { asset: "./assets/backgrounds/bell_park_pier.jpg", label: "호숫가 부두", rotationY: 0.65 }
+    "meadow": { asset: "./assets/backgrounds/meadow_2.jpg", label: "햇살 초원", rotationY: -0.25 },
+    "bell-park-pier": { asset: "./assets/backgrounds/bell_park_pier.jpg", label: "호숫가 부두", rotationY: 0.65 },
+    "small-rural-road": { asset: "./assets/backgrounds/small_rural_road.jpg", label: "포장 시골길", rotationY: 0.65 }
   };
   const automaticBackgrounds = {
     cesium: "urban-courtyard", trellis: "machine-shop", person: "monks-forest",
     baseball: "stadium", "baseball-geometry": "stadium", "baseball-projection": "stadium",
     "baseball-hires": "stadium", "baseball-retexture": "stadium",
-    "pikachu-sol": "meadow", "pikachu-astra": "meadow", pelican: "bell-park-pier"
+    "pikachu-sol": "meadow", "pikachu-astra": "meadow", pelican: "small-rural-road"
   };
   const backgroundChoices = document.querySelector("#backgroundChoices");
   var activeBackgroundTexture = null;
@@ -32479,6 +32481,7 @@ void main() {
       floor.geometry = new CircleGeometry(4.2, 96);
       floor.material.color.set(isLightScene ? "#e4ebf1" : 1580061);
       floor.material.metalness = isLightScene ? 0 : 0.16;
+      floor.visible = true;
       grid.visible = !isLightScene;
       ring.visible = !isLightScene;
       appliedBackground = "default";
@@ -32497,10 +32500,7 @@ void main() {
       activeBackgroundTexture = texture;
       scene.background = texture;
       scene.fog = null;
-      floor.geometry.dispose();
-      floor.geometry = new CircleGeometry(1.8, 64);
-      floor.material.color.set("#777b78");
-      floor.material.metalness = 0;
+      floor.visible = false;
       grid.visible = false;
       ring.visible = false;
       appliedBackground = effectiveBackground;
@@ -32616,6 +32616,8 @@ void main() {
     return target.clone();
   }, get activeAnimations() {
     return activeAnimations.length;
+  }, get loadedPreset() {
+    return loadedPreset;
   }, setView(value) {
     yaw = value;
     pitch = 0.04;
@@ -32633,5 +32635,5 @@ three/build/three.module.js:
    *)
 */
 </script>
-<script>document.querySelectorAll('.view-btn').forEach(b=>b.addEventListener('click',()=>{if(window.__orbitTest){window.__orbitTest.setView(Number(b.dataset.yaw));document.querySelectorAll('.view-btn').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));}}));</script>
+<script>document.querySelectorAll('.view-btn').forEach(b=>b.addEventListener('click',()=>{if(window.__orbitTest){const offset=window.__orbitTest.loadedPreset==='pelican'?Math.PI/2:0;window.__orbitTest.setView(Number(b.dataset.yaw)+offset);document.querySelectorAll('.view-btn').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));}}));</script>
 </body></html>
