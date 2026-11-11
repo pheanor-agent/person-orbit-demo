@@ -13,14 +13,29 @@
 
 .sample-link{color:var(--accent);font:11px/1.5 ui-monospace,monospace}.sample-links{flex-wrap:wrap}#modelChoices label{display:block;margin-bottom:8px}.preset-select{box-sizing:border-box}#variantNote:empty{display:none}
 @media(max-width:620px){.collection-section{grid-column:1/-1}}
+/* JOB-5687 adjacent: shared compact header + model/background panel */
+.appnav{display:flex;align-items:center;gap:2px;border:1px solid var(--line);background:#141819;padding:3px}
+.appnav a{display:flex;align-items:center;height:28px;padding:0 10px;color:var(--muted);font:10px ui-monospace,monospace;letter-spacing:.08em;text-decoration:none;border:1px solid transparent;white-space:nowrap}
+.appnav a:hover{color:var(--ink);border-color:#48504d}
+.appnav a:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.appnav a[aria-current="page"]{background:#22281f;border-color:#59603a;color:var(--accent)}
+.panel-trigger{height:30px;padding:0 12px;border:1px solid #48504d;background:#202525;color:var(--ink);font:10px ui-monospace,monospace;letter-spacing:.08em;cursor:pointer;white-space:nowrap}
+.panel-trigger[aria-expanded="true"],.panel-trigger:hover{border-color:var(--accent);color:var(--accent)}
+.panel-trigger:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.selection-panel{position:fixed;top:78px;right:16px;z-index:60;width:min(380px,calc(100vw - 24px));max-height:calc(100dvh - 94px);overflow-y:auto;overscroll-behavior:contain;background:var(--panel);border:1px solid #48504d;box-shadow:0 18px 48px #0009;padding:18px;display:flex;flex-direction:column;gap:18px}
+.selection-panel[hidden]{display:none}
+.selection-close{display:block;margin:0 0 6px auto;min-height:44px;padding:5px 12px}
+.selection-panel .section{padding:0}
+.selection-panel .choice-list{max-height:none}
+@media(max-width:620px){.selection-panel{top:64px;right:8px;left:8px;width:auto;max-height:calc(100dvh - 72px);padding:14px}.appnav a{padding:0 7px;font-size:9px;letter-spacing:.04em}.panel-trigger{padding:0 9px;font-size:9px}.top-meta .live{display:none}}
 </style>
 </head>
 <body data-page="lab">
-<header class="topbar"><div class="brand"><div class="mark" aria-hidden="true"></div><div><div class="brand-title">ORBIT / OBJECT VIEWER</div><div class="brand-sub">CHARACTER STUDY · MODEL LAB</div></div></div><div class="top-meta"><a data-collection-link href="./index.html" style="color:var(--accent);text-decoration:none">대표 컬렉션 ↗</a><span>INTERACTIVE / 3D</span><span class="live"><i></i> RENDER READY</span></div></header>
+<header class="topbar"><div class="brand"><div class="mark" aria-hidden="true"></div><div><div class="brand-title">ORBIT / OBJECT VIEWER</div><div class="brand-sub">CHARACTER STUDY · MODEL LAB</div></div></div><div class="top-meta"><nav class="appnav" aria-label="ORBIT 화면"><a data-nav="collection" data-collection-link href="./index.html">대표 컬렉션</a><a data-nav="lab" href="./lab.html" aria-current="page">실험실</a></nav><button class="panel-trigger" id="panelTrigger" type="button" aria-expanded="false" aria-controls="selectionPanel">모델·배경 선택</button><span class="live"><i></i> RENDER READY</span></div></header>
 <main class="layout"><section class="viewport-wrap" aria-label="움직이는 3D 모델 뷰"><canvas id="stage" class="stage" aria-label="드래그하여 모델 주변의 시점을 회전하는 3D 장면"></canvas><div class="scene-label"><strong>01</strong> &nbsp; / &nbsp; ORBITAL VIEW</div><div class="crosshair" aria-hidden="true"></div><div class="hint">드래그 · 회전 &nbsp;&nbsp; 휠 / 핀치 · 줌</div></section>
 <aside class="panel"><section class="object-card"><div class="eyebrow">선택된 오브젝트</div><div class="object-head"><div class="object-name" id="modelName">Cesium Man</div><div class="badge" id="modelBadge">GLB MODEL</div></div><div class="dimensions" id="modelDims">로딩 중…</div><a class="sample-link" id="modelDownload" download>현재 모델 GLB 다운로드 ↗</a><div class="rule"></div><div class="status" id="status" role="status" aria-live="polite">초기화 중…</div></section>
-<section class="section collection-section"><div class="section-title"><span class="eyebrow">실험실 · 두 단계 선택</span><span>MODEL LAB</span></div><label for="familySelect" class="eyebrow">종류 선택</label><select id="familySelect" class="preset-select" aria-label="비교할 모델 종류"></select><div class="dimensions">종류를 먼저 고른 뒤 한 버전을 선택하세요. 여러 버전이 있는 종류를 비교할 수 있습니다.</div><div id="labChoices"><div id="modelChoices"><label for="variantSelect" class="eyebrow">버전 선택</label><select id="variantSelect" class="preset-select" aria-label="비교할 버전"></select></div></div><p id="variantNote" class="method-note"></p><details id="baseballReference" class="reference-details" hidden><summary>기준 원본 이미지 보기</summary><a href="./assets/baseball-reference.png" target="_blank" rel="noopener"><img src="./assets/baseball-reference.png" alt="야구 타격 최초 원본 이미지" loading="lazy"></a></details><div class="sample-links"><a href="./reports/sol-reference-refinement.html">새 모델 제작·비교 결과 ↗</a><a href="./reports/sol-quality-production.html">펠리컨·램프·정원 개선 ↗</a><a id="experimentReport" href="./reports/pelican-comparison.html">펠리컨 비교 결과 ↗</a><a data-collection-link href="./index.html">대표 컬렉션으로 돌아가기 ↗</a><a id="sampleLink" href="?model=cesium">이 샘플 바로 열기 ↗</a><button id="copyLink" type="button">링크 복사</button></div></section>
-<section class="section"><div class="section-title"><span class="eyebrow">360° 배경</span><span>ENVIRONMENT</span></div><div class="choice-list" id="backgroundChoices" role="group" aria-label="360도 배경 선택"><button class="choice-button" type="button" data-background="auto">어셋에 맞춤 · 자동</button><button class="choice-button" type="button" data-background="default">단색 스튜디오 · 수동</button><button class="choice-button" type="button" data-background="urban-courtyard">도시 안뜰</button><button class="choice-button" type="button" data-background="machine-shop">기계 작업장</button><button class="choice-button" type="button" data-background="monks-forest">숲길</button><button class="choice-button" type="button" data-background="stadium">경기장</button><button class="choice-button" type="button" data-background="meadow">햇살 초원</button><button class="choice-button" type="button" data-background="bell-park-pier">호숫가 부두</button><button class="choice-button" type="button" data-background="small-rural-road">포장 시골길</button><button class="choice-button" type="button" data-background="autumn-park">가을 공원</button></div><div class="dimensions" id="backgroundStatus" role="status" aria-live="polite">어셋과 별도로 선택할 수 있습니다.</div></section>
+<div id="selectionPanel" class="selection-panel" role="dialog" aria-label="모델·배경 선택" aria-modal="false" hidden><button type="button" id="selectionClose" class="selection-close" aria-label="모델·배경 선택 닫기">닫기</button><section class="section collection-section"><div class="section-title"><span class="eyebrow">실험실 · 두 단계 선택</span><span>MODEL LAB</span></div><label for="familySelect" class="eyebrow">종류 선택</label><select id="familySelect" class="preset-select" aria-label="비교할 모델 종류"></select><div class="dimensions">종류를 먼저 고른 뒤 한 버전을 선택하세요. 여러 버전이 있는 종류를 비교할 수 있습니다.</div><div id="labChoices"><div id="modelChoices"><label for="variantSelect" class="eyebrow">버전 선택</label><select id="variantSelect" class="preset-select" aria-label="비교할 버전"></select></div></div><p id="variantNote" class="method-note"></p><details id="baseballReference" class="reference-details" hidden><summary>기준 원본 이미지 보기</summary><a href="./assets/baseball-reference.png" target="_blank" rel="noopener"><img src="./assets/baseball-reference.png" alt="야구 타격 최초 원본 이미지" loading="lazy"></a></details><div class="sample-links"><a href="./reports/sol-reference-refinement.html">새 모델 제작·비교 결과 ↗</a><a href="./reports/sol-quality-production.html">펠리컨·램프·정원 개선 ↗</a><a id="experimentReport" href="./reports/pelican-comparison.html">펠리컨 비교 결과 ↗</a><a data-collection-link href="./index.html">대표 컬렉션으로 돌아가기 ↗</a><a id="sampleLink" href="?model=cesium">이 샘플 바로 열기 ↗</a><button id="copyLink" type="button">링크 복사</button></div></section>
+<section class="section"><div class="section-title"><span class="eyebrow">360° 배경</span><span>ENVIRONMENT</span></div><div class="choice-list" id="backgroundChoices" role="group" aria-label="360도 배경 선택"><button class="choice-button" type="button" data-background="auto">어셋에 맞춤 · 자동</button><button class="choice-button" type="button" data-background="default">단색 스튜디오 · 수동</button><button class="choice-button" type="button" data-background="urban-courtyard">도시 안뜰</button><button class="choice-button" type="button" data-background="machine-shop">기계 작업장</button><button class="choice-button" type="button" data-background="monks-forest">숲길</button><button class="choice-button" type="button" data-background="stadium">경기장</button><button class="choice-button" type="button" data-background="meadow">햇살 초원</button><button class="choice-button" type="button" data-background="bell-park-pier">호숫가 부두</button><button class="choice-button" type="button" data-background="small-rural-road">포장 시골길</button><button class="choice-button" type="button" data-background="autumn-park">가을 공원</button></div><div class="dimensions" id="backgroundStatus" role="status" aria-live="polite">어셋과 별도로 선택할 수 있습니다.</div></section></div>
 <section class="section motion-section" id="motionControls" hidden><div class="section-title"><span class="eyebrow">애니메이션</span><span id="motionPhase">반복 동작</span></div><div class="motion-buttons"><button class="button" id="motionPlay" aria-pressed="true">Ⅱ 동작 일시정지</button><button class="button" id="motionRestart" aria-label="동작 처음부터">↺ 처음부터</button></div><input id="motionTimeline" type="range" min="0" max="16" value="0" step="0.01" aria-label="애니메이션 재생 위치"><div class="motion-time"><span id="motionTime">0.0 / 16.0초</span><label>속도 <select id="motionSpeed" aria-label="애니메이션 속도"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option></select></label></div></section>
 
 
@@ -31,4 +46,48 @@
 <footer class="footer"><span>DRAG TO ORBIT · ANIMATED 3D MODELS</span><span>THREE.JS r180 · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0</a></span></footer>
 <script src="./viewer.js?v=sol-reference-reviewed-20261009"></script>
 <script>document.querySelectorAll('.view-btn').forEach(b=>b.addEventListener('click',()=>{if(window.__orbitTest){const offset=window.__orbitTest.modelFamily==='pelican'?Math.PI/2:0;window.__orbitTest.setView(Number(b.dataset.yaw)+offset);document.querySelectorAll('.view-btn').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));}}));</script>
+<script>
+/* JOB-5687 adjacent: selection panel open/close, Escape and focus return */
+(() => {
+  const panel = document.getElementById('selectionPanel');
+  const trigger = document.getElementById('panelTrigger');
+  const dismiss = document.getElementById('selectionClose');
+  if (!panel || !trigger || !dismiss) return;
+  const position = () => {
+    if (panel.hidden) return;
+    const box = trigger.getBoundingClientRect();
+    const gap = 8;
+    const width = Math.min(380, document.documentElement.clientWidth - 2 * gap);
+    panel.style.inset = (box.bottom + gap) + 'px auto auto ' + Math.max(gap, Math.min(box.left, innerWidth - width - gap)) + 'px';
+    panel.style.width = width + 'px';
+    panel.style.maxHeight = Math.max(0, innerHeight - box.bottom - 2 * gap) + 'px';
+  };
+  const open = () => {
+    panel.hidden = false;
+    trigger.setAttribute('aria-expanded', 'true');
+    position();
+    panel.scrollTop = 0;
+    const first = panel.querySelector('button, select, a[href]');
+    if (first) first.focus();
+  };
+  const close = (returnFocus) => {
+    if (panel.hidden) return;
+    panel.hidden = true;
+    trigger.setAttribute('aria-expanded', 'false');
+    if (returnFocus) trigger.focus({preventScroll:true});
+  };
+  trigger.addEventListener('click', () => (panel.hidden ? open() : close(true)));
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && !panel.hidden) { event.preventDefault(); close(true); }
+  });
+  document.addEventListener('pointerdown', event => {
+    if (panel.hidden) return;
+    if (panel.contains(event.target) || trigger.contains(event.target)) return;
+    close(false);
+  });
+  dismiss.addEventListener('click', () => close(true));
+  window.addEventListener('resize', position, {passive:true});
+  window.addEventListener('scroll', position, {passive:true});
+})();
+</script>
 </body></html>
